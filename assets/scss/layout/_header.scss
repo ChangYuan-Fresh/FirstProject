@@ -1,0 +1,20 @@
+header{
+    .navbar-nav{
+        p{
+            color: $primary;
+        }
+    }
+    .material-symbols-outlined{
+        padding: 6px;
+    }
+    .border-fix{
+        border-bottom: 1px solid $primary;
+        @include media-breakpoint-up(lg){
+            border-bottom: none;
+            border-right: 1px solid $primary;
+        }
+    }
+    .btn-icon{
+        border-radius: 16px;
+    }
+}
