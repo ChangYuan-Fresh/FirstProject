@@ -1,20 +1,35 @@
-header{
-    .navbar-nav{
-        p{
+header {
+    max-width: 1728px;
+
+    .navbar-nav {
+        p {
             color: $primary;
         }
     }
-    .material-symbols-outlined{
+
+    .material-symbols-outlined {
         padding: 6px;
     }
-    .border-fix{
+
+    .border-fix {
         border-bottom: 1px solid $primary;
-        @include media-breakpoint-up(lg){
+
+        @include media-breakpoint-up(lg) {
             border-bottom: none;
             border-right: 1px solid $primary;
         }
     }
-    .btn-icon{
+
+    .btn-icon {
         border-radius: 16px;
     }
+
+    // .navbar-collapse {
+    //     height: calc(100vh - 100px);
+    //     overflow-y: scroll;
+    //     @include media-breakpoint-up(lg){
+    //         height: auto;
+    //         overflow-y: hidden;
+    //     }
+    // }
 }
