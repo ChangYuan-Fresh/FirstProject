@@ -5,6 +5,8 @@
 @import "../../node_modules/bootstrap";
 @import './utils/utilities';
 
+@import "bootstrap/scss/utilities/api";
+
 @import "./base/base";
 @import "./components/button";
 @import './layout/header.scss';
