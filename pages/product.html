@@ -18,7 +18,18 @@
         <div class="container product">
             <main class="position-relative mb-10 mt-lg-7">
                 <div class="row">
-                    <div class="col-lg-5 h-100">
+                    <div class="d-lg-none">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../assets/images/Cauliflower HQ (2).png" alt=""></div>
+                                <div class="swiper-slide"><img src="../assets/images/Cauliflower HQ (6).png" alt=""></div>
+                                <div class="swiper-slide"><img src="../assets/images/Cauliflower HQ.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../assets/images/Cauliflower HQ (4).png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 h-100 d-none d-lg-block">
                         <div class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -52,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 d-flex flex-column justify-content-between h-100">
                         <div>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -61,47 +72,71 @@
                                     <li class="breadcrumb-item active" aria-current="page">埔鹽鄉白花椰菜</li>
                                 </ol>
                             </nav>
-                            <h1 class="fs-4 fs-lg-2">埔鹽鄉白花椰菜</h1>
-                            <p class="">新鮮現摘，清脆好吃</p>
-                            <div class="d-flex align-items-center">
+                            <h1 class="fs-4 fs-lg-2 mb-1">埔鹽鄉白花椰菜</h1>
+                            <p class="mb-3">新鮮現摘，清脆好吃</p>
+                            <div class="d-flex align-items-center mb-3">
                                 <h2 class="text-accent fs-5 fs-lg-4 en-font">NT$599</h2>
                                 <p class="text-decoration-line-through text-muted fs-7 fs-lg-6">NT$999</p>
                             </div>
                         </div>
-                        <div>
-                            <p>規格</p>
-                            <div class="d-flex">
-                                <button class="btn btn-outline-gray active">3 顆 /盒</button>
-                                <button class="btn btn-outline-gray">5 顆 /盒</button>
-                            </div>
-                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <p class="text-primary fs-7 mb-2">規格</p>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-gray active me-2">3 顆 /盒</button>
+                                    <button class="btn btn-outline-gray">5 顆 /盒</button>
+                                </div>
+                            </li>
+                            <li class="mb-5">
+                                <p class="text-primary fs-7 mb-2">數量</p>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-s me-2"><span
+                                            class="material-symbols-outlined align-middle">remove</span></button>
+                                    <button class="btn btn-outline-gray">1</button>
+                                    <button class="btn btn-s ms-2"><span
+                                            class="material-symbols-outlined align-middle">add</span></button>
+                                </div>
+                            </li>
+                            <li class="btn btn-L w-100 mb-3 fs-5 py-3">加入購物車</li>
+                            <li class="btn btn-L w-100 active py-3">立即選購</li>
+                        </ul>
                     </div>
                 </div>
         </div>
         </main>
 
-        <%- include('./layout/footer'); -%>
+        <!-- <%- include('./layout/footer'); -%> -->
 
-            <script type="module" src="../main.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    spaceBetween: 10,
-                    slidesPerView: 4,
-                    freeMode: true,
-                    watchSlidesProgress: true,
-                });
-                var swiper2 = new Swiper(".mySwiper2", {
-                    spaceBetween: 10,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    thumbs: {
-                        swiper: swiper,
-                    },
-                });
-            </script>
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+            var swiper3 = new Swiper(".mySwiper3", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
 
 </body>
 

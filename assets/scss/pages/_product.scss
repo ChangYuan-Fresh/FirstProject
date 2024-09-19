@@ -32,6 +32,28 @@
                     opacity: 1;
                 }
             }
+            .mySwiper3{
+                height: 346px;
+            }
+        }
+
+        .btn-outline-gray{
+            padding: 12px 24px;
+            background: white;
+            color: $gray;
+            font-weight: bold;
+            border-radius: 8px;
+            min-width: 98px;
+            &.active,
+            &:hover{
+                border-color: $primary;
+                color: $primary;
+            }
+            
+        }
+        .btn-s{
+            border-radius: 8px;
+            padding: 8px;
         }
     }
 }
