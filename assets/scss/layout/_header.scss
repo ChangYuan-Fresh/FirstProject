@@ -24,10 +24,6 @@ header {
         }
     }
 
-    .btn-icon {
-        border-radius: 16px;
-    }
-
     .down {
         height: 0;
         overflow: hidden;
@@ -37,5 +33,10 @@ header {
     .up {
         transition: all 400ms;
         height: 5em;
+    }
+
+    .box {
+        width: 100%;
+        height: 128px;
     }
 }
