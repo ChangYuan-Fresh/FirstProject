@@ -2,6 +2,8 @@ header {
     max-width: 1728px;
     margin: 0 auto;
     padding: 0 12px;
+    position: fixed;
+    top: 0em;
 
     .navbar-nav {
         p {
@@ -26,4 +28,14 @@ header {
         border-radius: 16px;
     }
 
+    .down {
+        height: 0;
+        overflow: hidden;
+        transition: all 400ms;
+    }
+
+    .up {
+        transition: all 400ms;
+        height: 5em;
+    }
 }

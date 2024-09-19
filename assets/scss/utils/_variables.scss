@@ -687,7 +687,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        700; //500 !default; custom
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              $primary; //inherit !default; custom
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -1671,7 +1671,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                '>';// quote("/") !default;custom
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
