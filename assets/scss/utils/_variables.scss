@@ -299,7 +299,8 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #788F49; //$blue !default; custom
-$secondary:     #F1EAD4; //$gray-600 !default; custom
+$secondary:     #F1EAD4; //$gray-600 !default; custom //secondary-100
+$secondary-200: #F8F5E9; //custom 
 $tertiary:      #FFFCF3; //custom
 $accent:        #FF8965; //custom
 $black:         #192115; //custom
@@ -325,6 +326,7 @@ $theme-colors: (
   "dark":       $dark,
 
   //custom;
+  "secondary-200":  $secondary-200,
   "tertiary":   $tertiary,
   "accent":     $accent,
   "black":      $black,
