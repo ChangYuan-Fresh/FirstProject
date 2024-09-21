@@ -1,5 +1,14 @@
-.banner-img{
+.banner-img{  
+    height: 80vh;
     @media(min-width: 992px) {
         border-radius: 80px;
     }
+}
+
+.deco-curve{
+   height: 226px;
+   object-fit: none;
+   @media(min-width: 992px){
+    height: auto;
+   }
 }
