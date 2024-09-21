@@ -12,22 +12,32 @@
     <%- include('./layout/header'); -%>
     <main>
       <!--banner-->
-      <section>
-        <div class="container-fluid">
-          <img src="../assets/images/banner.png" alt="banner" class=" position-relative px-10 banner-img">
+      <section class="px-lg-10">
+        <div class="container-fluid ">
+          <img src="../assets/images/banner.png" alt="banner" class="banner-img position-relative w-100">
         </div>
         <div class="container">
           <div class=" position-absolute top-50 translate-middle-y">
             <h1 class="bg-primary text-white px-4 py-3 mb-4 d-inline-block">來自彰化的新鮮美味</h1>
             <h4 class="bg-white px-4 py-3 mb-7">在地農夫精心栽培，每一口都是健康的保證</h4>
             <form role="search" class="position-relative" style="width: 415px; height: 56px;">
+              <div class="dropdown position-absolute top-50 start-0 translate-middle-y">
+                <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  全部商品 
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
               <input class="form-control fs-6" type="search" placeholder="立即選購！新鮮抵家啦～" aria-label="Search">
               <a href="#"><i class="bi bi-search text-primary fs-2 position-absolute top-50 end-0 translate-middle-y  me-2"></i></a>
             </form>
           </div>   
         </div>
       </section>
-      加上標題
+      
     </main>
     
     <%- include('./layout/footer'); -%>

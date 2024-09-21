@@ -1,5 +1,5 @@
 .banner-img{
-    @include media-breakpoint-up(lg) {
+    @media(min-width: 992px) {
         border-radius: 80px;
     }
 }
