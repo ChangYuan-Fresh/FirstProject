@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <main >
       <!--banner-->
-      <section class=" px-lg-10 position-relative" >
+      <section class=" px-lg-10 position-relative h-100" >
         <img src="../assets/images/banner.png" alt="banner" class="banner-img position-relative w-100">
         <!--手機版-->
         <div class="container position-absolute top-50 start-50 translate-middle text-center d-lg-none">
@@ -74,7 +76,7 @@
                   <img src="../assets/images/Illustration/Farmer.png" alt="#" >
                 </picture>
                 <div class="reason-card-body d-flex flex-column align-items-center ">
-                  <h5 class="card-title fs-lg-4 bg-accent text-white px-lg-6 px-8 py-lg-3 py-2 rounded-4 mb-3">支持在地小農</h5>
+                  <h5 class="reason-card-title fs-lg-4 bg-accent text-white px-lg-6 px-8 py-lg-3 py-2 rounded-4 mb-3">支持在地小農</h5>
                   <p class="card-text fs-lg-5 fs-7 px-4 py-lg-6 py-3 bg-white rounded-3">由彰化農民親手栽種，並確保每一份產品收益，妥當回饋農民，促進當地市場。</p>
                 </div>
               </div>
@@ -87,7 +89,7 @@
                 </picture>
                 <div class="reason-card-body d-flex flex-column align-items-center">
                   <h5 class="card-title fs-lg-4 bg-accent text-white px-lg-6 px-8 py-lg-3 py-2 rounded-4 mb-3">產地新鮮直送</h5>
-                  <p class="card-text fs-lg-5 fs-7 px-4 py-lg-6 py-3 bg-white rounded-3">從田間到餐桌，確保產地直送，每一次配送都力求保存最新鮮的自然風味。</p>
+                  <p class="reason-card-text fs-lg-5 fs-7 px-4 py-lg-6 py-3 bg-white rounded-3">從田間到餐桌，確保產地直送，每一次配送都力求保存最新鮮的自然風味。</p>
                 </div>
               </div>
             </div>
@@ -99,18 +101,618 @@
                 </picture>
                 <div class="reason-card-body d-flex flex-column align-items-center">
                   <h5 class="card-title fs-lg-4 bg-accent text-white px-lg-6 px-8 py-lg-3 py-2 rounded-4 mb-3">維護環境永續</h5>
-                  <p class="card-text fs-lg-5 fs-7 px-4 py-lg-6 py-3 bg-white rounded-3">由專家嚴格控款，農作與畜產的用藥及碳排放，確保對環境以及您的健康無害。</p>
+                  <p class="reason-card-text fs-lg-5 fs-7 px-4 py-lg-6 py-3 bg-white rounded-3">由專家嚴格控款，農作與畜產的用藥及碳排放，確保對環境以及您的健康無害。</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!--商品列表-->
+      <section>
+        <div class="container py-lg-9 py-6">
+          <!--商品列表nav-->
+          <ul class="nav nav-tabs product-nav-tabs px-auto" id="MyProductTab" role="tablist">
+            <div class="swiper MyProduct-nav-product-swiper px-6">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active product-nav-link border-0  fs-lg-3 fs-md-4 fs-6 text-nowrap"
+                      id="hot-product-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#hot-product"
+                      type="button"
+                      role="tab"
+                      aria-controls="hot-product"
+                      aria-selected="true">
+                      熱門商品
+                      <div class=""></div>
+                    </button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link product-nav-link border-0  fs-lg-3 fs-md-4 fs-6 text-nowrap"
+                      id="veggieNfruit-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#veggieNfruit"
+                      type="button"
+                      role="tab"
+                      aria-controls="veggieNfruit"
+                      aria-selected="false">
+                      蔬菜水果
+                    </button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link product-nav-link border-0  fs-lg-3 fs-md-4 fs-6 text-nowrap"
+                      id="meats-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#meats"
+                      type="button"
+                      role="tab"
+                      aria-controls="meats"
+                      aria-selected="false">
+                      生鮮肉品
+                    </button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link product-nav-link border-0  fs-lg-3 fs-md-4 fs-6 text-nowrap"
+                      id="seafood-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#seafood"
+                      type="button"
+                      role="tab"
+                      aria-controls="seafood"
+                      aria-selected="false">
+                      水產海鮮
+                    </button>
+                  </li>
+                </div>
+                <div class="swiper-slide">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link product-nav-link border-0 fs-lg-3 fs-md-4 fs-6 text-nowrap"
+                      id="eggNmilk-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#eggNmilk"
+                      type="button"
+                      role="tab"
+                      aria-controls="eggNmilk"
+                      aria-selected="false">
+                      蛋與乳品
+                    </button>
+                  </li>
+                </div>
+              </div>
+          </ul>
+          <div class="tab-content" id="MyProductTabContent">
+            <!--熱門商品內容-->
+            <div class="tab-pane fade show active" id="hot-product" role="tabpanel" aria-labelledby="hot-product-tab">
+              <!--熱門商品swiper-->
+              <div class="MyProduct-product-card-wrap swiper MyProduct-product-swiper py-8 position-relative ">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type1.png" alt="type1" class="rounded-4">
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        埔鹽鄉多汁茂谷柑-3kg
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$600</p>
+                        <del class="fs-8 text-gray fw-normal">NT$641</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active  ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type2" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        芬園鄉濃純牛奶-200ml
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$36</p>
+                        <del class="fs-8 text-gray fw-normal">NT$44</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type3" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        鹿港鎮鮮活文蛤-600g
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$190</p>
+                        <del class="fs-8 text-gray fw-normal">NT$210</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        福興鄉翠綠豌豆-1000g
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                </div>
+                <div class="swiper-button-prev my-button-disabled"></div>
+                <div class="swiper-button-next my-button-disabled"></div>
+                <div class="swiper-scrollbar bg-secondary d-none d-lg-block rounded-3 start-50 translate-middle " style="width: 120px;"></div>
+              </div>
+            </div>
+            <!--蔬菜水果內容-->
+            <div class="tab-pane fade " id="veggieNfruit" role="tabpanel" aria-labelledby="veggieNfruit-tab">
+              <!--蔬菜水果swiper-->
+              <div class="MyProduct-product-card-wrap swiper MyProduct-product-swiper py-8 position-relative ">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type1" class="rounded-4">
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        綠豆
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$600</p>
+                        <del class="fs-8 text-gray fw-normal">NT$641</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active  ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type2" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        有人叫他豆豆
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$36</p>
+                        <del class="fs-8 text-gray fw-normal">NT$44</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type3" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        好多豆豆
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$190</p>
+                        <del class="fs-8 text-gray fw-normal">NT$210</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        炸多豆豆
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        很可怕不要問
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                </div>
+                <div class="swiper-button-prev my-button-disabled"></div>
+                <div class="swiper-button-next my-button-disabled"></div>
+                <div class="swiper-scrollbar bg-secondary d-none d-lg-block rounded-3 start-50 translate-middle " style="width: 120px;"></div>
+              </div>
+            </div>
+            <!--生鮮肉品內容-->
+            <div class="tab-pane fade " id="meats" role="tabpanel" aria-labelledby="meats-tab">
+              <!--生鮮肉品swiper-->
+              <div class="MyProduct-product-card-wrap swiper MyProduct-product-swiper py-8 position-relative ">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/meat.png" alt="type1" class="rounded-4">
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        牛肉
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$600</p>
+                        <del class="fs-8 text-gray fw-normal">NT$641</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active  ">
+                    <div class="">
+                      <img src="/assets/images/meat.png" alt="type2" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        羊肉
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$36</p>
+                        <del class="fs-8 text-gray fw-normal">NT$44</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/meat.png" alt="type3" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        鹿肉
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$190</p>
+                        <del class="fs-8 text-gray fw-normal">NT$210</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/meat.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        豬肉
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/meat.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        吃了什麼肉都不知道
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                </div>
+                <div class="swiper-button-prev my-button-disabled"></div>
+                <div class="swiper-button-next my-button-disabled"></div>
+                <div class="swiper-scrollbar bg-secondary d-none d-lg-block rounded-3 start-50 translate-middle " style="width: 120px;"></div>
+              </div>
+            </div>
+            <!--水產海鮮內容-->
+            <div class="tab-pane fade " id="seafood" role="tabpanel" aria-labelledby="seafood-tab">
+              <!--水產海鮮swiper-->
+              <div class="MyProduct-product-card-wrap swiper MyProduct-product-swiper py-8 position-relative ">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type1" class="rounded-4">
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        蛤
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$200</p>
+                        <del class="fs-8 text-gray fw-normal">NT$999</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active  ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type2" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        蛤蛤
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$36</p>
+                        <del class="fs-8 text-gray fw-normal">NT$44</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type3" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        蛤蛤蛤
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$190</p>
+                        <del class="fs-8 text-gray fw-normal">NT$210</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        蛤蛤蛤蛤
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type3.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        蛤夠了
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                </div>
+                <div class="swiper-button-prev my-button-disabled"></div>
+                <div class="swiper-button-next my-button-disabled"></div>
+                <div class="swiper-scrollbar bg-secondary d-none d-lg-block rounded-3 start-50 translate-middle " style="width: 120px;"></div>
+              </div>
+            </div>
+            <!--蛋與乳品內容-->
+            <div class="tab-pane fade " id="eggNmilk" role="tabpanel" aria-labelledby="eggNmilk-tab">
+              <!--蛋與乳品swiper-->
+              <div class="MyProduct-product-card-wrap swiper MyProduct-product-swiper py-8 position-relative ">
+                <div class="swiper-wrapper">
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type1" class="rounded-4">
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        奶
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$600</p>
+                        <del class="fs-8 text-gray fw-normal">NT$641</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active  ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type2" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        牛奶
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$36</p>
+                        <del class="fs-8 text-gray fw-normal">NT$44</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type3" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        ㄋㄟㄋㄟ
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$190</p>
+                        <del class="fs-8 text-gray fw-normal">NT$210</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        牛奶多到
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type22.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        家裡好像養一頭牛
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                </div>
+                <div class="swiper-button-prev my-button-disabled"></div>
+                <div class="swiper-button-next my-button-disabled"></div>
+                <div class="swiper-scrollbar bg-secondary d-none d-lg-block rounded-3 start-50 translate-middle " style="width: 120px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--產地故事-->
+      <section></section>
+
       
     </main>
     
     <%- include('./layout/footer'); -%>
  
     <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".MyProduct-product-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: false,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          disabledClass: 'my-button-disabled'
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      var swiper = new Swiper(".MyProduct-nav-product-swiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 24,
+        loop: false,
+        breakpoints: {         
+          875: {
+            slidesPerView: 5,
+            spaceBetween: 24,
+          }
+        },
+      });
+
+    </script>
   </body>
 </html>
