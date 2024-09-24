@@ -13,7 +13,8 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main >
+
+    <main>
       <!--banner-->
       <section class=" px-lg-10 position-relative h-100" >
         <img src="../assets/images/banner.png" alt="banner" class="banner-img position-relative w-100">
@@ -260,6 +261,23 @@
                     <div class="card-body px-0">
                       <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
                         福興鄉翠綠豌豆-1000g
+                      </h6>
+                      <div class="card-text d-flex">
+                        <p class="text-accent fw-bold me-2">NT$150</p>
+                        <del class="fs-8 text-gray fw-normal">NT$200</del>                      
+                      </div>
+                    </div> 
+                    <button class="btn btn-primary product-btn  border-0 fw-bold fs-lg-4 fs-5">
+                      立即購買
+                    </button> 
+                  </a>
+                  <a href="#" class="swiper-slide card border-0 swiper-slide-active ">
+                    <div class="">
+                      <img src="/assets/images/type42.png" alt="type4" class="rounded-4 " >
+                    </div>
+                    <div class="card-body px-0">
+                      <h6 class="card-title  product-card-title fs-lg-5 text-nowrap fw-bold">
+                        怎麼又是豆豆
                       </h6>
                       <div class="card-text d-flex">
                         <p class="text-accent fw-bold me-2">NT$150</p>
@@ -706,7 +724,7 @@
                 </div>
               </div>
             </div>
-            <div class="nav story-nav flex-column nav-pills me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav story-nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <button class="nav-link story-btn active text-start fs-lg-4 fs-6 position-relative" id="v-pills-cauliflower-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cauliflower" type="button" role="tab" aria-controls="v-pills-cauliflower" aria-selected="true">
                 種植花椰菜的故事<span class="material-symbols-outlined story-icon">chevron_right</span>
               </button>
@@ -720,10 +738,81 @@
                 用蜆打造的精緻佳餚<span class="material-symbols-outlined story-icon">chevron_right</span>
               </button>
             </div>
-          </div>
+          </div>          
+        </div>
+        <div class="bg-white position-relative py-lg-7 py-3">
+          <picture>
+            <source media="(min-width: 992px)" srcset="../assets/images/deco/Arrow-Curve.png">
+            <img src="../assets/images/deco/Arrow-Curve-sm.png" alt="Arrow-Curve" class="arrow-curve">
+          </picture>
         </div>
       </section>
       <!--滿千免運-->
+      <section >
+        <div class="container pt-8 d-lg-block d-flex flex-column-reverse">
+          <div class="row row-cols-lg-3 row-cols-1 position-relative ">
+            <div class="col px-0">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title fs-lg-1 text-accent text-lg-start text-center">01</h4>
+                  <div class="d-flex flex-column align-items-center">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/Illustration/Tree.png">
+                      <img src="../assets/images/Illustration/Tree-sm.png" alt="Tree" class="promotion-img">
+                    </picture>
+                  </div>
+                  <div class="promotion-img-bottom"></div>
+                  <p class="fs-lg-2 fs-md-3 fs-5 text-primary text-center mt-lg-3 mt-1">產地</p>
+                </div>
+              </div>
+            </div>
+            <div class="col px-0">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title fs-lg-1 text-accent text-lg-start text-center">02</h4>
+                  <div class="d-flex flex-column align-items-center">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/Illustration/Delivery.png">
+                      <img src="../assets/images/Illustration/Delivery-sm.png" alt="Delivery" class="promotion-img">
+                    </picture>
+                  </div>
+                  <div class="promotion-img-bottom"></div>
+                  <p class="fs-lg-2 fs-md-3 fs-5 text-primary text-center mt-lg-3 mt-1">運送</p>
+                </div>
+              </div>
+            </div>
+            <div class="col px-0">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title fs-lg-1 text-accent text-lg-start text-center">03</h4>
+                  <div class="d-flex flex-column align-items-center">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="../assets/images/Illustration/Eating.png">
+                      <img src="../assets/images/Illustration/Eating-sm.png" alt="Eating" class="promotion-img">
+                    </picture>
+                  </div>
+                  <div class="promotion-img-bottom"></div>
+                  <p class="fs-lg-2 fs-md-3 fs-5 text-primary text-center mt-lg-3 mt-1">餐桌</p>                 
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="../assets/images/deco/Arrow-1.png" alt="Arrow-1" class="d-lg-block d-none promotion-arrow1"> 
+              <img src="../assets/images/deco/Arrow-2.png" alt="Arrow-2" class="d-lg-block d-none promotion-arrow2"> 
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center pt-lg-8 pt-0">
+            <h1 class="d-lg-block d-none mb-6">產地到餐桌，全館滿千免運!</h1>
+            <h4 class="d-lg-none text-center mb-6">產地到餐桌 <br> 全館滿千免運</h4>
+            <button class="btn btn-primary promotion-btn border-0 fw-bold fs-lg-4 fs-5 text-white">
+              立即購買
+            </button> 
+            <div id="lottie-animation" class="lottie-hand"></div>
+          </div>
+          
+        </div>
+
+      </section>
 
       
     </main>
@@ -731,8 +820,13 @@
     <%- include('./layout/footer'); -%>
  
     <script type="module" src="../main.js"></script>
+
+    <!--輪播-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--選購小手手-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
 
     <script>
       var swiper = new Swiper(".MyProduct-product-swiper", {
@@ -774,7 +868,17 @@
           }
         },
       });
-
     </script>
+
+    <script>
+      var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'), // 容器元素
+        renderer: 'svg', // 渲染方式
+        loop: true, // 是否循環播放
+        autoplay: true, // 是否自動播放
+        path: '../assets/animations/lottie-hand.json' // Lottie動畫文件的路徑
+      });
+    </script>
+
   </body>
 </html>

@@ -177,3 +177,71 @@ main{
     font-size: 32px;
 }
 
+.arrow-curve{
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//買千免運
+
+.promotion-img-bottom{
+    height: 60px;
+    background:#F1EAD4;
+    border-radius: 16px;
+    @media(min-width: 776px){
+        height: 80px;
+    }
+    @media(min-width: 992px){
+        height: 100px;
+        border-radius: 40px;
+    }
+    @media(min-width: 1400px){
+        height: 120px;
+    }
+}
+
+.promotion-img{
+    margin-bottom: -60px;
+    @media(min-width: 992px){
+        margin-bottom: -80px;
+    }
+    @media(min-width: 1400px){
+        margin-bottom: -96px;
+    }
+}
+
+
+.promotion-btn{
+    width: 208px;
+    height: 56px;
+    @media(min-width: 992px){
+        width: 227px;
+        height: 61px;
+    }
+    &:hover{
+        background-color: #FF8965;
+    }
+}
+
+.lottie-hand{
+    width: 40px;
+    height: 40px;
+    @media(min-width: 992px){
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.promotion-arrow1{
+    position: absolute;   
+    left: 25%;
+    bottom: 5%;
+}
+
+.promotion-arrow2{
+    position: absolute;
+    top: 12%;
+    right: 28%;
+}
