@@ -245,3 +245,29 @@ main{
     top: 12%;
     right: 28%;
 }
+
+.promotion-curve{
+    width: 100%;
+    height: 228px;
+    object-fit: none; //根據螢幕大小直接被裁切
+    margin-bottom: -1px;
+}
+
+//合作店家
+
+.store-img{
+    width: 96px;
+    height: 96px;
+    max-width: 96px;
+    border-radius: 12px;
+    margin:auto 12px ;
+    @media(min-width: 500px){
+        margin:12px ;
+    }
+    @media(min-width: 768px){
+        margin-top: 24px;
+        width: 120px;
+        height: 120px;
+        max-width: 120px;
+    }
+}
