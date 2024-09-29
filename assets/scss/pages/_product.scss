@@ -1,8 +1,10 @@
+
 .product {
     main {
         .row {
-            height: calc(100vh - 128px);
-
+            .pc-box{
+                max-height: 587px;
+            }
             .swiper-slide {
                 text-align: center;
                 display: flex;
@@ -23,7 +25,8 @@
             }
 
             .mySwiper {
-                height: 15%;
+                height: 18%;
+
                 .swiper-slide {
                     opacity: 0.4;
                 }
@@ -32,28 +35,85 @@
                     opacity: 1;
                 }
             }
-            .mySwiper3{
+
+            .mobile-box{
+                padding: 0 0;
+            }
+            .mySwiper3 {
                 height: 346px;
+                img{
+                    border-radius: 0;
+                }
+                .swiper-pagination{
+                    color: $tertiary;
+                    background: rgba(25, 33, 21, 0.7);
+                    width: 44px;
+                    border-radius: 100px;
+                }
+            }
+            .breadcrumb-item{
+                color: $gray;
+                &.active,
+                &:hover{
+                    color: $primary;
+                }
             }
         }
 
-        .btn-outline-gray{
+        .btn-outline-gray {
             padding: 12px 24px;
             background: white;
             color: $gray;
             font-weight: bold;
             border-radius: 8px;
             min-width: 98px;
+
             &.active,
-            &:hover{
+            &:hover {
                 border-color: $primary;
                 color: $primary;
             }
-            
+
         }
-        .btn-s{
+
+        .btn-s {
             border-radius: 8px;
             padding: 8px;
+        }
+        .btn-L{
+            border: 0;
+            &.active,
+            &:hover{
+                color: $primary;
+                background: $secondary;
+            }
+        }
+    }
+    article{
+        h2{
+            color: $black;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .card-img{
+            width: 100%;
+            max-height: 263px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            object-fit: cover;
+        }
+    }
+    section{
+        h2{
+            color: $black;
+            font-size: 20px;
+        }
+        .card{
+            border-radius: 16px;
+            height: 120px;
+        }
+        span{
+            padding: 0 0;
         }
     }
 }
