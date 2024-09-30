@@ -49,6 +49,9 @@
                     background: rgba(25, 33, 21, 0.7);
                     width: 44px;
                     border-radius: 100px;
+                    right: 0;
+                    bottom: 0;
+                    margin: 12px 12px;
                 }
             }
             .breadcrumb-item{
@@ -67,6 +70,12 @@
             font-weight: bold;
             border-radius: 8px;
             min-width: 98px;
+            &-big{
+                @include media-breakpoint-up(lg){
+                    width: 194px;
+                }
+            }
+            
 
             &.active,
             &:hover {
@@ -94,6 +103,9 @@
             color: $black;
             font-size: 20px;
             margin-bottom: 12px;
+            @include media-breakpoint-up(lg){
+                font-size: 24px;
+            }
         }
         .card-img{
             width: 100%;
@@ -102,18 +114,59 @@
             margin-bottom: 12px;
             object-fit: cover;
         }
+
+        .border-bottom-transparent{
+            font-weight: bold;
+            &.active,
+            &:hover{
+                border-bottom: 4px solid $primary;
+                color: $primary;
+            }
+        }
+        .scrollspy-example{
+            max-width: 856px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                max-height: 560px;
+                object-fit: cover;
+                padding: 40px 0;
+            }
+            p,
+            li{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
     }
-    section{
+    .section1{
         h2{
             color: $black;
             font-size: 20px;
+            @include media-breakpoint-up(lg){
+                font-size: 24px;
+            }
         }
         .card{
             border-radius: 16px;
             height: 120px;
+            @include media-breakpoint-up(lg){
+                height: 240px;
+            }
+            &-text{
+                max-height: 72px;
+                overflow: hidden;
+            }
         }
         span{
             padding: 0 0;
+            display: inline-block;
         }
+    }
+
+    .modal-content{
+        width: 635px;
+        border-radius: 16px;
+        padding: 0 24px;
     }
 }
