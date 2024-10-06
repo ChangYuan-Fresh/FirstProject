@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milk</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="header.js"></script>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container product">
+            <main class="position-relative mb-lg-11 mb-0 mt-lg-7">
+                <div class="row gx-lg-5">
+                    <div class="d-lg-none mobile-box">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../assets/images/type2.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1529258283598-8d6fe60b27f4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1630234674856-7d47ebaba5c9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block pc-box">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/type2.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1529258283598-8d6fe60b27f4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1630234674856-7d47ebaba5c9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper pt-4 pb-0">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/type2.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1529258283598-8d6fe60b27f4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1630234674856-7d47ebaba5c9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex flex-column justify-content-between px-lg-5">
+                        <div class="mt-5 mt-lg-0">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-2">
+                                    <li class="breadcrumb-item fs-7 fs-lg-6 fw-normal"><a href="#">熱門商品</a></li>
+                                    <li class="breadcrumb-item active fs-7 fs-lg-6 fw-normal" aria-current="page">
+                                        芬園鄉濃純牛奶</li>
+                                </ol>
+                            </nav>
+                            <h1 class="fs-4 fs-lg-2 mb-1">芬園鄉濃純牛奶</h1>
+                            <p class="mb-3 text-gray fw-normal fs-6 fs-lg-5">無添加，口感濃郁</p>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="price1">
+                                    <div class="d-flex">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$36</h2>
+                                        <p class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">NT$44</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="price2">
+                                    <div class="d-flex">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$70</h2>
+                                        <p class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">NT$85</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-primary fs-7 mb-2">規格</p>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray active me-2 fs-6 fs-lg-5 btn-outline-gray-big"
+                                        id="price1" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">200ml
+                                        /罐</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5 btn-outline-gray-big" id="price2"
+                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">400ml
+                                        /罐</button>
+                                </li>
+                            </ul>
+                            <div class="mb-5">
+                                <p class="text-primary fs-7 mb-2">數量</p>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-s me-2"><span
+                                            class="material-symbols-outlined align-middle">remove</span></button>
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5">1</button>
+                                    <button class="btn btn-s ms-2"><span
+                                            class="material-symbols-outlined align-middle">add</span></button>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex">
+                                <a href="#" class="btn btn-L w-100 mb-3 mb-lg-0 fs-5 py-3 me-lg-5 me-0">加入購物車</a>
+                                <a href="#" class="btn btn-L w-100 active fs-5 py-3">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <article class="d-lg-none">
+                <ul class="list-unstyled">
+                    <li class="my-5">
+                        <h2>商品介紹</h2>
+                        <p class="mb-2">
+                            芬園鄉的濃純牛奶，自然之源，純淨滋味！
+                        </p>
+                        <p>在清新純淨的芬園鄉，我們秉持傳統養殖方式，為您帶來來自大自然的最佳饋贈——濃純牛奶。這款牛奶從乳牛到您手中，全程嚴格控管，保證每一口都是最純正的天然好味道。
+                        </p>
+                        <p data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="text-center text-primary">看全部<span
+                                class="material-symbols-outlined align-middle">keyboard_arrow_down</span></p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card border-0">
+                                <img src="https://plus.unsplash.com/premium_photo-1664910135012-4631d04376a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Cauliflower" class="card-img img-fluid">
+                                <p class="card-text mb-2">純正濃郁，口感絲滑</p>
+                                <p class="card-text mb-2">
+                                    芬園鄉的濃純牛奶因其豐富的乳脂含量而聞名，每一口都充滿濃郁的奶香，入口順滑，猶如在品嚐新鮮奶油般的美妙口感。沒有任何添加物，只保留最自然的乳香與營養。每天一杯濃純牛奶，為您的健康生活注入滿滿活力！
+                                </p>
+                                <img src="https://plus.unsplash.com/premium_photo-1661690495584-cba1d18e1936?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Cauliflower" class="card-img img-fluid">
+                                <p class="card-text mb-2">
+                                    我們堅持當日新鮮採集與直送，確保牛奶的營養與風味保持在最佳狀態。來自芬園的肥沃土地和純淨水源，賦予牛奶特有的滑順質地和豐富的營養成分。無論是早餐的開啟、午間的補充，還是晚間的放鬆時光，這款濃純牛奶都將成為您日常健康的首選夥伴。
+                                </p>
+                                <p class="card-text mb-3">
+                                    無論是為家人準備的美味早餐，還是自製奶昔、甜點的絕佳原料，芬園濃純牛奶都是不二之選。它富含高品質的蛋白質、鈣質和維他命，是每個年齡層都能安心飲用的優質奶源。每一口都能感受到大自然的真誠，讓您遠離加工添加物，回歸最純淨的滋味。
+                                </p>
+                                <img src="https://images.unsplash.com/reserve/YFdIoUsRJCAehcoUnQaS_Straw.jpg?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Cauliflower" class="card-img img-fluid">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="my-5">
+                        <h2>規格說明</h2>
+                        <p>200ml /罐</p>
+                        <p>400ml /罐</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>保存方法</h2>
+                        <p>收到後冷藏保存 7-10 天,請盡快於賞味期限內食用完畢</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>滿額免運原則</h2>
+                        <ol>
+                            <li>
+                                全館商品滿 $1000 (含及以上)即享免運服務
+                            </li>
+                            <li>
+                                訂單含冷凍商品時，僅提供宅配服務
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+            <article class="d-none d-lg-block">
+                <nav id="navbar-example2">
+                    <ul class="list-unstyled d-flex justify-content-between w-100 border-bottom mb-8">
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading1" class="py-4 fs-4 text-black active">商品介紹</a>
+                        </li>
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading2" class="py-4 fs-4 text-black">規格說明</a>
+                        </li>
+                        <li class="btn text-center w-100 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading3" class="py-4 fs-4 text-black">評論</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+                    class="scrollspy-example pt-8" tabindex="0">
+                    <div id="scrollspyHeading1">
+                        <p class="mb-3">
+                            芬園鄉的濃純牛奶，自然之源，純淨滋味！
+                        </p>
+                        <p>在清新純淨的芬園鄉，我們秉持傳統養殖方式，為您帶來來自大自然的最佳饋贈——濃純牛奶。這款牛奶從乳牛到您手中，全程嚴格控管，保證每一口都是最純正的天然好味道。
+                        </p>
+                        <img src="https://plus.unsplash.com/premium_photo-1664910135012-4631d04376a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cauliflower" class="img-fluid">
+                        <p class="mb-3">純正濃郁，口感絲滑</p>
+                        <p class="card-text mb-2">
+                            芬園鄉的濃純牛奶因其豐富的乳脂含量而聞名，每一口都充滿濃郁的奶香，入口順滑，猶如在品嚐新鮮奶油般的美妙口感。沒有任何添加物，只保留最自然的乳香與營養。每天一杯濃純牛奶，為您的健康生活注入滿滿活力！
+                        </p>
+                        <img src="https://plus.unsplash.com/premium_photo-1661690495584-cba1d18e1936?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cauliflower" class="img-fluid">
+                        <p class="mb-3">
+                            我們堅持當日新鮮採集與直送，確保牛奶的營養與風味保持在最佳狀態。來自芬園的肥沃土地和純淨水源，賦予牛奶特有的滑順質地和豐富的營養成分。無論是早餐的開啟、午間的補充，還是晚間的放鬆時光，這款濃純牛奶都將成為您日常健康的首選夥伴。
+                        </p>
+                        <p>無論是為家人準備的美味早餐，還是自製奶昔、甜點的絕佳原料，芬園濃純牛奶都是不二之選。它富含高品質的蛋白質、鈣質和維他命，是每個年齡層都能安心飲用的優質奶源。每一口都能感受到大自然的真誠，讓您遠離加工添加物，回歸最純淨的滋味。
+                        </p>
+                        <img src="https://images.unsplash.com/reserve/YFdIoUsRJCAehcoUnQaS_Straw.jpg?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cauliflower" class="img-fluid">
+                    </div>
+                    <ul id="scrollspyHeading2" class="list-unstyled">
+                        <li class="mb-8">
+                            <h2>規格說明</h2>
+                            <p>200ml /罐</p>
+                            <p>400ml /罐</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>保存方法</h2>
+                            <p>收到後冷藏保存 7-10 天,請盡快於賞味期限內食用完畢</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>滿額免運原則</h2>
+                            <ol>
+                                <li>
+                                    全館商品滿 $1000 (含及以上)即享免運服務
+                                </li>
+                                <li>
+                                    訂單含冷凍商品時，僅提供宅配服務
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section class="section1 mb-5 pt-8 border-top" id="scrollspyHeading3">
+                <div class="d-flex justify-content-between mb-3">
+                    <h2>評論</h2>
+                    <a href="#" class="link-primary d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">看所有評論 (14)</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content bg-secondary-200">
+                                <div class="modal-header border-0 px-0 pt-6 pb-3">
+                                    <h5 class="modal-title text-black" id="exampleModalLabel">所有評論 (14)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">Jack Wu</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>芬園鄉的牛奶有著非常滑順的質地，沒有任何加工味，入口即化的感覺讓人難以忘懷，完全回到小時候喝的那種老味道。</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">雲林黃小姐</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>喝起來非常滑順，既有濃厚的奶味，又不會覺得油膩，感覺非常天然。
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">葉佩雯</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-lg-6">
+                                            對小孩來說，這款牛奶讓我們更放心，因為營養豐富，而且沒有添加物。</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">陳**</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>我愛喝牛奶，但喝過芬園的濃純牛奶後，真的再也回不去一般市售的牛奶了！口感絲滑，不會太甜，沒有任何人工添加的感覺，讓人喝得安心，當然也是我們家冰箱裡的常備品！
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">李X旭</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>這款牛奶不僅味道濃厚，營養成分也很豐富。早上來一杯，立刻充滿能量！</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">Vicky</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>全家人都喜歡這種天然純正的口味，尤其是用來做咖啡或奶昔，效果超棒！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">Jack Wu</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 d-lg-none text-truncate">
+                                芬園鄉的牛奶有著非常滑順的質地，沒有任何加工味，入口即化的感覺讓人難以忘懷，完全回到小時候喝的那種老味道。</p>
+                            <p class="card-text fs-7 fs-lg-6 d-none d-lg-block">
+                                芬園鄉的牛奶有著非常滑順的質地，沒有任何加工味，入口即化的感覺讓人難以忘懷，完全回到小時候喝的那種老味道。</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model3">看全部</a>
+                            <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">Jack Wu</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>芬園鄉的牛奶有著非常滑順的質地，沒有任何加工味，入口即化的感覺讓人難以忘懷，完全回到小時候喝的那種老味道。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">雲林黃小姐</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">喝起來非常滑順，既有濃厚的奶味，又不會覺得油膩，感覺非常天然。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">葉佩雯</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7">
+                                對小孩來說，這款牛奶讓我們更放心，因為營養豐富，而且沒有添加物。</p>
+                            <div class="modal fade" id="model2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">葉佩雯</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>對小孩來說，這款牛奶讓我們更放心，因為營養豐富，而且沒有添加物。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">陳**</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 d-lg-none text-truncate">
+                                我愛喝牛奶，但喝過芬園的濃純牛奶後，真的再也回不去一般市售的牛奶了！口感絲滑，不會太甜，沒有任何人工添加的感覺，讓人喝得安心，當然也是我們家冰箱裡的常備品！</p>
+                            <p class="card-text fs-lg-6 d-none d-lg-block">
+                                我愛喝牛奶，但喝過芬園的濃純牛奶後，真的再也回不去一般市售的牛奶了！口感絲滑，不會太甜，沒有任何人工添加的感覺，讓人喝得安心，當然也是我們家冰箱裡的常備品！</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model4">看全部</a>
+                            <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">陳**</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>我愛喝牛奶，但喝過芬園的濃純牛奶後，真的再也回不去一般市售的牛奶了！口感絲滑，不會太甜，沒有任何人工添加的感覺，讓人喝得安心，當然也是我們家冰箱裡的常備品！
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-bs-toggle="collapse" href="#collapseCommet" role="button" aria-expanded="false"
+                        aria-controls="collapseExample" class="text-primary text-center d-lg-none">看所有評論 (14)</p>
+                    <div class="collapse col-lg-3" id="collapseCommet">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5 mb-2">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">李X旭</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                這款牛奶不僅味道濃厚，營養成分也很豐富。早上來一杯，立刻充滿能量！</p>
+                        </div>
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">Vicky</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                全家人都喜歡這種天然純正的口味，尤其是用來做咖啡或奶昔，效果超棒！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <img src="../assets/images/Illustration/Top-Curve.png" alt="banner" class="promotion-curve">
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                var swiper2 = new Swiper(".mySwiper2", {
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                        swiper: swiper,
+                    },
+                });
+                var swiper3 = new Swiper(".mySwiper3", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+
+</body>
+
+</html>
