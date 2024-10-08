@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>伸港鄉生猛鮮蚵</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="header.js"></script>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container product">
+            <main class="position-relative mb-lg-11 mb-0 mt-lg-7">
+
+                <div class="row gx-lg-5">
+                    <!-- mobile展示圖片 -->
+                    <div class="d-lg-none mobile-box">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../assets/images/Oyster HD Image (1) 1.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://plus.unsplash.com/premium_photo-1708011759643-9c9d944b9c23?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1515503249716-e0175c9d8fab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img
+                                        src="https://plus.unsplash.com/premium_photo-1720071739764-db9837e45eb4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- pc展示圖片 -->
+                    <div class="col-lg-5 d-none d-lg-block pc-box">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/Oyster HD Image (1) 1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1708011759643-9c9d944b9c23?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1515503249716-e0175c9d8fab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1720071739764-db9837e45eb4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper pt-4 pb-0">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/Oyster HD Image (1) 1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1708011759643-9c9d944b9c23?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1515503249716-e0175c9d8fab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1720071739764-db9837e45eb4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex flex-column justify-content-between px-lg-5">
+                        <div class="mt-5 mt-lg-0">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-2">
+                                    <li class="breadcrumb-item fs-7 fs-lg-6 fw-normal"><a href="#">水產海鮮</a></li>
+                                    <li class="breadcrumb-item fs-7 fs-lg-6 fw-normal"><a href="#">貝類</a></li>
+                                    <li class="breadcrumb-item active fs-7 fs-lg-6 fw-normal" aria-current="page">
+                                        伸港鄉生猛鮮蚵</li>
+                                </ol>
+                            </nav>
+                            <h1 class="fs-4 fs-lg-2 mb-1">伸港鄉生猛鮮蚵</h1>
+                            <p class="mb-3 text-gray fw-normal fs-6 fs-lg-5">肉質肥美，鮮美無比</p>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="price1">
+                                    <div class="d-flex">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$220</h2>
+                                        <p
+                                            class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">
+                                            NT$999</p>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="price2">
+                                    <div class="d-flex">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$450</h2>
+                                        <p
+                                            class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">
+                                            NT$1299</p>
+                                    </div>
+                                </div>
+                                <p class="text-accent mb-3 fs-7 fs-lg-6
+                            fs-6 fs-lg-5">*低溫冷凍商品</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-primary fs-7 mb-2">規格</p>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray active me-2 fs-6 fs-lg-5 btn-outline-gray-big"
+                                        id="price1" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">200g
+                                        /包</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5 btn-outline-gray-big" id="price2"
+                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">450g
+                                        /包</button>
+                                </li>
+                            </ul>
+                            <div class="mb-5">
+                                <div class="d-flex justify-content-between w-50">
+                                    <p class="text-primary fs-7 mb-2">數量</p>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active d-none d-lg-block" id="pills-home"
+                                            role="tabpanel" aria-labelledby="price1">
+                                            <p class="text-gray">剩餘 11 包</p>
+                                        </div>
+                                        <div class="tab-pane fade d-none d-lg-block" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="price2">剩餘 25 包</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-s me-2"><span
+                                            class="material-symbols-outlined align-middle">remove</span></button>
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5">1</button>
+                                    <button class="btn btn-s ms-2"><span
+                                            class="material-symbols-outlined align-middle">add</span></button>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex">
+                                <a href="#" class="btn btn-L w-100 mb-3 mb-lg-0 fs-5 py-3 me-lg-5 me-0">加入購物車</a>
+                                <a href="#" class="btn btn-L w-100 active fs-5 py-3">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- mobile文案 -->
+            <article class="d-lg-none">
+                <ul class="list-unstyled">
+                    <li class="my-5">
+                        <h2>商品介紹</h2>
+                        <p class="mb-2">
+                            伸港鄉，擁有台灣最優質的海域環境，以其清澈潔淨的海水孕育出世界聞名的鮮蚵。這裡的養殖鮮蚵以個大、肉嫩、鮮甜為特色，深受消費者喜愛。無論是料理愛好者還是海鮮控，都無法抗拒來自伸港鄉的鮮美誘惑！
+                        </p>
+                        <p>伸港鄉的鮮蚵養殖場位於遠離污染的清潔海域，水質經過嚴格監控，保證每一顆鮮蚵都是在最純淨的海水中成長。採用天然養殖方式，不含任何人工成分，確保鮮蚵保持最原始的大海風味，每一口都充滿海洋的鮮甜。
+                        </p>
+                        <p data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="text-center text-primary">看全部<span
+                                class="material-symbols-outlined align-middle">keyboard_arrow_down</span></p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card border-0">
+                                <img src="https://ourisland.pts.org.tw/sites/default/files/u73/1166-1-21%20%E6%8B%B7%E8%B2%9D.jpg"
+                                    alt="milkFish" class="card-img img-fluid">
+                                <p class="card-text mb-2">肉質肥美，鮮嫩多汁的極致口感</p>
+                                <p class="card-text mb-3">伸港鄉養殖生猛鮮蚵——每一顆都是來自大海的天然美味，健康與鮮甜的完美融合！</p>
+                                <img src="https://images.unsplash.com/photo-1717251720369-bf81289248ed?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="milkFish" class="card-img img-fluid">
+                                <p class="card-text mb-2">
+                                    鮮蚵被譽為「海中牛奶」，含有豐富的蛋白質、礦物質和維生素，特別是高含量的鋅與Omega-3脂肪酸，對促進身體健康和提升免疫力有顯著功效。來自伸港鄉的鮮蚵不僅美味，還是健康養生的首選海鮮！
+                                </p>
+                                <p class="card-text mb-3">
+                                    伸港鄉的生猛鮮蚵可以輕鬆變身各種美味佳餚。無論是經典的蚵仔煎、香濃的蚵仔湯，還是充滿創意的西式烤鮮蚵，每一種料理方式都能釋放出鮮蚵最極致的美味。無論您是海鮮料理新手還是老饕，都能輕鬆打造一桌色香味俱全的海味盛宴。
+                                </p>
+                                <img src="https://mays1.weebly.com/uploads/5/6/7/6/5676424/2598386_orig.jpg"
+                                    alt="milkFish" class="card-img img-fluid">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="my-5">
+                        <h2>規格說明</h2>
+                        <p>200g /包， 200g ±10% /包</p>
+                        <p>450g /包， 450g ±10% /包</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>保存方法</h2>
+                        <p>收到後冷凍保存 7-10 天,請盡快於賞味期限內食用完畢</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>滿額免運原則</h2>
+                        <ol>
+                            <li>
+                                全館商品滿 $1000 (含及以上)即享免運服務
+                            </li>
+                            <li>
+                                訂單含冷凍商品時，僅提供宅配服務
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+            <!-- pc文案 -->
+            <article class="d-none d-lg-block">
+                <nav id="navbar-example2">
+                    <ul class="list-unstyled d-flex justify-content-between w-100 border-bottom mb-8">
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading1" class="py-4 fs-4 text-black active">商品介紹</a>
+                        </li>
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading2" class="py-4 fs-4 text-black">規格說明</a>
+                        </li>
+                        <li class="btn text-center w-100 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading3" class="py-4 fs-4 text-black">評論</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+                    class="scrollspy-example pt-8" tabindex="0">
+                    <div id="scrollspyHeading1">
+                        <p class="mb-3">
+                            伸港鄉，擁有台灣最優質的海域環境，以其清澈潔淨的海水孕育出世界聞名的鮮蚵。這裡的養殖鮮蚵以個大、肉嫩、鮮甜為特色，深受消費者喜愛。無論是料理愛好者還是海鮮控，都無法抗拒來自伸港鄉的鮮美誘惑！
+                        </p>
+                        <p>伸港鄉的鮮蚵養殖場位於遠離污染的清潔海域，水質經過嚴格監控，保證每一顆鮮蚵都是在最純淨的海水中成長。採用天然養殖方式，不含任何人工成分，確保鮮蚵保持最原始的大海風味，每一口都充滿海洋的鮮甜。
+                        </p>
+                        <img src="https://ourisland.pts.org.tw/sites/default/files/u73/1166-1-21%20%E6%8B%B7%E8%B2%9D.jpg"
+                            alt="milkFish" class="img-fluid">
+                        <p class="mb-3">肉質肥美，鮮嫩多汁的極致口感</p>
+                        <p class="card-text mb-3">伸港鄉養殖生猛鮮蚵——每一顆都是來自大海的天然美味，健康與鮮甜的完美融合！</p>
+                        <img src="https://images.unsplash.com/photo-1717251720369-bf81289248ed?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="milkFish" class="img-fluid">
+                        <p class="mb-3">
+                            鮮蚵被譽為「海中牛奶」，含有豐富的蛋白質、礦物質和維生素，特別是高含量的鋅與Omega-3脂肪酸，對促進身體健康和提升免疫力有顯著功效。來自伸港鄉的鮮蚵不僅美味，還是健康養生的首選海鮮！
+                        </p>
+                        <p>伸港鄉的生猛鮮蚵可以輕鬆變身各種美味佳餚。無論是經典的蚵仔煎、香濃的蚵仔湯，還是充滿創意的西式烤鮮蚵，每一種料理方式都能釋放出鮮蚵最極致的美味。無論您是海鮮料理新手還是老饕，都能輕鬆打造一桌色香味俱全的海味盛宴。
+                        </p>
+                        <img src="https://mays1.weebly.com/uploads/5/6/7/6/5676424/2598386_orig.jpg" alt="milkFish"
+                            class="img-fluid">
+                    </div>
+                    <ul id="scrollspyHeading2" class="list-unstyled">
+                        <li class="mb-8">
+                            <h2>規格說明</h2>
+                            <p>200g /包， 200g ±10% /包</p>
+                            <p>450g /包， 450g ±10% /包</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>保存方法</h2>
+                            <p>收到後冷凍保存 7-10 天,請盡快於賞味期限內食用完畢</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>滿額免運原則</h2>
+                            <ol>
+                                <li>
+                                    全館商品滿 $1000 (含及以上)即享免運服務
+                                </li>
+                                <li>
+                                    訂單含冷凍商品時，僅提供宅配服務
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section class="section1 mb-5 pt-8 border-top" id="scrollspyHeading3">
+                <div class="d-flex justify-content-between mb-3">
+                    <h2>評論</h2>
+                    <a href="#" class="link-primary d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">看所有評論 (14)</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content bg-secondary-200">
+                                <div class="modal-header border-0 px-0 pt-6 pb-3">
+                                    <h5 class="modal-title text-black" id="exampleModalLabel">所有評論 (14)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">廖先生</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>鮮蚵非常鮮美好吃</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">網美小林</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>每一顆都非常肥美，口感鮮嫩多汁，完全沒有腥味。我最喜歡用它來煮湯，湯頭特別鮮甜，蚵肉滑嫩得像是入口即化。
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">宜蘭吳媽媽</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-lg-6">
+                                            這款鮮蚵每次購買都不會讓我失望，品質一如既往的穩定！每次打開包裝都能聞到海水的清新氣息，肉質飽滿，送來時依然保持著很高的新鮮度，真的很棒！</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">顏先生</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>這款鮮蚵的個頭真的很大，滿滿的蚵肉非常飽滿，讓人吃得很過癮。
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">黃**</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>非常新鮮，肉質鮮甜，下次有機會還會再回購</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">J******N</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>作為一個海鮮愛好者，鮮蚵一直是我最愛的食材之一。伸港鄉的鮮蚵不僅品質高，而且每次吃都不會膩。肉質肥嫩，鮮甜可口，不論是簡單的生吃還是複雜的料理，都能完美呈現它的美味。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">廖先生</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7">
+                                鮮蚵非常鮮美好吃</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">網美小林</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 text-truncate d-lg-none">
+                                下單後很快就送到家，每一顆鮮蚵都保持著極佳的鮮度，甚至感覺像是剛從海裡撈起來的。非常滿意這次的購買經驗！</p>
+                            <p class="card-text fs-lg-6 d-none d-lg-block">
+                                下單後很快就送到家，每一顆鮮蚵都保持著極佳的鮮度，甚至感覺像是剛從海裡撈起來的。非常滿意這次的購買經驗！</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model3">看全部</a>
+                            <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">宜蘭吳媽媽</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>下單後很快就送到家，每一顆鮮蚵都保持著極佳的鮮度，甚至感覺像是剛從海裡撈起來的。非常滿意這次的購買經驗！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">宜蘭吳媽媽</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 text-truncate d-lg-none">
+                                這款鮮蚵每次購買都不會讓我失望，品質一如既往的穩定！每次打開包裝都能聞到海水的清新氣息，肉質飽滿，送來時依然保持著很高的新鮮度，真的很棒！</p>
+                            <p class="card-text fs-lg-6 d-none d-lg-block">
+                                這款鮮蚵每次購買都不會讓我失望，品質一如既往的穩定！每次打開包裝都能聞到海水的清新氣息，肉質飽滿，送來時依然保持著很高的新鮮度，真的很棒！</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model2">看全部</a>
+                            <div class="modal fade" id="model2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">宜蘭吳媽媽</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>這款鮮蚵每次購買都不會讓我失望，品質一如既往的穩定！每次打開包裝都能聞到海水的清新氣息，肉質飽滿，送來時依然保持著很高的新鮮度，真的很棒！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">顏先生</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                這款鮮蚵的個頭真的很大，滿滿的蚵肉非常飽滿，讓人吃得很過癮。</p>
+                        </div>
+                    </div>
+                    <p data-bs-toggle="collapse" href="#collapseCommet" role="button" aria-expanded="false"
+                        aria-controls="collapseExample" class="text-primary text-center d-lg-none">看所有評論 (14)</p>
+                    <div class="collapse d-lg-none" id="collapseCommet">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5 mb-2">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">黃**</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                非常新鮮，肉質鮮甜，下次有機會還會再回購</p>
+                        </div>
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">J******N</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 text-truncate d-lg-none">
+                                作為一個海鮮愛好者，鮮蚵一直是我最愛的食材之一。伸港鄉的鮮蚵不僅品質高，而且每次吃都不會膩。肉質肥嫩，鮮甜可口，不論是簡單的生吃還是複雜的料理，都能完美呈現它的美味。</p>
+                            <p class="card-text fs-lg-6 d-none d-lg-block">
+                                作為一個海鮮愛好者，鮮蚵一直是我最愛的食材之一。伸港鄉的鮮蚵不僅品質高，而且每次吃都不會膩。肉質肥嫩，鮮甜可口，不論是簡單的生吃還是複雜的料理，都能完美呈現它的美味。</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model4">看全部</a>
+                            <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">J******N</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>作為一個海鮮愛好者，鮮蚵一直是我最愛的食材之一。伸港鄉的鮮蚵不僅品質高，而且每次吃都不會膩。肉質肥嫩，鮮甜可口，不論是簡單的生吃還是複雜的料理，都能完美呈現它的美味。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <img src="../assets/images/Illustration/Top-Curve.png" alt="banner" class="promotion-curve">
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                var swiper2 = new Swiper(".mySwiper2", {
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                        swiper: swiper,
+                    },
+                });
+                var swiper3 = new Swiper(".mySwiper3", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+
+</body>
+
+</html>
