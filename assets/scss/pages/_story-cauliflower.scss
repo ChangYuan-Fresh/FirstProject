@@ -24,7 +24,7 @@ main{
 
 //文章
 
-.story-btn{
+.story-cauliflower-btn{
     background-color:#FFFCF3;
     color: #000;
     width: 100%;
@@ -49,7 +49,7 @@ main{
     }
 }
 
-.story-img{
+.story-cauliflower-img{
     object-fit: cover;
     width: 100%;
     height: 240px;
@@ -58,12 +58,12 @@ main{
         padding: 24px 0;
     }
     @media(min-width: 992px){
-        max-height: 560px;
+        height: 640px;
         padding: 40px 0;
     }
 }
 
-.deco{
+.deco-tree{
     position: absolute;
     bottom: 0;
     right: 0;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>葡萄園的奧秘</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+         <!--banner-->
+        <section class=" px-lg-10 position-relative h-100" >
+            <img src="../assets/images/Cauliflower HQ (2).png" alt="banner" class="banner-img w-100">
+            <div class="container">
+                <div class="position-absolute top-50 translate-middle-y ">
+                    <h6 class="fs-lg-4 bg-white px-2 px-lg-4 py-2 d-inline-block mb-2 mb-lg-4">產品故事 <span class="fs-lg-5 align-baseline">Story</span></h6>
+                    <h4 class="fs-lg-1 bg-primary text-white px-2 px-lg-4 py-2 py-lg-3">探索農田的秘密</h4>
+            </div>
+            <img src="../assets/images/Illustration/Top-Curve(2).png" alt="Top-Curve" class="deco-curve" >
+        </section>
+        <!--文章-->
+        <section>
+            <div class="container pb-lg-11 pt-lg-7 py-md-7 py-4 d-flex flex-column-reverse flex-lg-row position-relative">
+                <img src="../assets/images/Illustration/trees.png" alt="tree" class="deco-tree">
+                <article class="story-article bg-secondary-200 p-lg-7 p-5 rounded-3">
+                    <div class="d-sm-flex justify-content-between align-items-baseline mb-lg-5 mb-3">
+                        <h4 class="fs-lg-1 fs-md-3 text-nowrap">葡萄園的奧秘</h4>
+                        <p class="text-gray fs-7" >2024/08/10</p>
+                    </div>
+                    <p class="mb-3 fs-lg-4">說到葡萄的風土，大家第一反應就會想到法國或者是其他歐美國家，但卻很少想到台灣也有自己在地的葡萄園。事實上，台灣的葡萄園不僅歷史悠久，而且擁有獨特的風土條件，讓這裡的葡萄酒別具一格。
+                    </p>
+                    <p class="fs-lg-4">台灣的葡萄種植可以追溯到日治時期，當時日本人引進了葡萄栽培技術，並在台灣的中部和南部地區開始種植葡萄。這些地區的氣候溫暖濕潤，土壤肥沃，非常適合葡萄的生長。</p>
+                    <img src="../assets/images/grape/grape1.png" alt="grape1" class="img-fluid story-grape-img">
+                    <p class="mb-3 fs-lg-4">其中，大村鄉位於彰化縣，是台灣著名的葡萄產地之一。這裡的氣候乾燥、土質鬆軟，非常適合葡萄的生長。</p>
+                    <p class="fs-lg-4">大村鄉的葡萄種植歷史悠久，自民國53年引進巨峰葡萄以來，至今已有超過50年的栽培經驗。大村的巨峰葡萄以其大顆粒、甜美多汁的特點而聞名，並且當地農民採用有機栽培和環保種植的方法，確保葡萄的品質和安全。
+                    </p>
+                    <img src="../assets/images/grape/grape2.png" alt="grape2" class="img-fluid story-grape-img">
+                    <p class="mb-3 fs-lg-4">台灣的葡萄園多數位於山坡地，這些地區的日夜溫差大，有助於葡萄糖分的積累，提升葡萄的甜度和風味。</p>
+                    <p class="fs-lg-4">此外，台灣的農民非常注重有機栽培和環保種植，這使得台灣的葡萄酒不僅口感豐富，還具有健康和環保的特點。
+                    </p>
+                    <img src="../assets/images/grape/grape3.png" alt="grape3" class="img-fluid story-grape-img">
+                    <p class="mb-3 fs-lg-4">台灣的葡萄酒產業雖然規模不大，但卻充滿了創新和活力。許多葡萄酒莊園都開放給遊客參觀，讓人們可以親身體驗葡萄的種植和釀造過程，並品嚐到新鮮的葡萄酒。這些葡萄酒莊園不僅是生產葡萄酒的場所，還成為了旅遊和休閒的好去處。</p>
+                    <img src="../assets/images/grape/grape4.png" alt="grape4" class="img-fluid story-grape-img">
+                </article>
+                <aside class="ms-lg-5 mb-3 mb-lg-5 sticky-top ">
+                    <div class="list-group list-group-flush p-5 bg-secondary rounded-3 sticky-top ">
+                        <a href="story.html" class="story-grape-btn list-group-item list-group-item-action bg-primary text-white text-center mb-3">產地故事</a>
+                        <a href="story-cauliflower.html" class="story-grape-btn list-group-item list-group-item-action mb-3" aria-current="true">
+                            <span class="material-symbols-outlined align-middle fs-7">chevron_left</span>種植花椰菜的小故事
+                        </a>
+                        <a href="story-grape.html" class="story-grape-btn list-group-item list-group-item-action active mb-3"><span class="material-symbols-outlined align-middle fs-7">chevron_left</span>葡萄園的奧秘</a>
+                        <a href="#" class="story-grape-btn list-group-item list-group-item-action mb-3"><span class="material-symbols-outlined align-middle fs-7">chevron_left</span>從牧場到餐桌的旅程</a>
+                        <a href="#" class="story-grape-btn list-group-item list-group-item-action mb-0"><span class="material-symbols-outlined align-middle fs-7">chevron_left</span>用蜆打造的精緻佳餚</a>
+                    </div>
+                </aside>
+            </div>
+            
+          </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
