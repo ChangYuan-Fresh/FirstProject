@@ -123,6 +123,8 @@
                 color: $primary;
             }
         }
+        
+        
         .scrollspy-example{
             max-width: 856px;
             margin: 0 auto;
@@ -130,7 +132,8 @@
                 width: 100%;
                 max-height: 560px;
                 object-fit: cover;
-                padding: 40px 0;
+                margin: 40px 0;
+                border-radius: 8px;
             }
             p,
             li{
@@ -139,6 +142,7 @@
             }
         }
     }
+
     .section1{
         h2{
             color: $black;
