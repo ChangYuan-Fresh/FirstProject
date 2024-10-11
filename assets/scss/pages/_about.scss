@@ -1,15 +1,18 @@
 .banner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%; // 改為100%以填滿整個寬度
+  margin: 0;
+  padding: 0;
+  border-radius: 0; // 移除圓角
+  position: relative; // 為絕對定位的子元素提供參考
+  overflow: hidden; // 確保波浪不會超出容器
 }
 
 .text-content {
   position: relative;
-  height: 60vh;
+  height: 80vh; // 增加高度
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 3rem;
+  border-radius: 0; // 移除底部圓角
+  margin-bottom: 0;
 
   img {
     width: 100%;
@@ -78,8 +81,16 @@
 .content-block {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
   gap: 2rem;
+  max-width: 1200px; // 限制最大寬度
+  margin: 0 auto 3rem; // 居中並保持底部間距
+  padding: 0 2rem; // 添加左右內邊距
+
+  .content-block:first-of-type {
+    margin-top: -100px; // 調整這個值，使內容與波浪重疊
+    position: relative;
+    z-index: 3; // 確保內容在波浪之上
+  }
 
   img {
     width: 746px;
@@ -118,6 +129,27 @@
       border-radius: 16px;
     }
   }
+}
+
+.deco-curve {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+
+  &.top {
+    top: 480px; // 確保與內容完全貼合
+  }
+
+  &.bottom {
+    bottom: -40px; // 調整這個值，使波浪與內容重疊
+    z-index: 2; // 確保波浪在內容之上
+  }
+}
+
+.bg-01 {
+  padding: 50px 0; // 添加上下內邊距
 }
 
 // 響應式設計
