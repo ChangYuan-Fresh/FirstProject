@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="header.js"></script>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container login">
+            <div class="row">
+                <div class="card border-0 mx-auto my-lg-11 my-7 col-lg-6">
+                    <div class="card-body mb-5">
+                        <h1 class="card-title fs-2 text-center text-primary mb-11">會員登入</h1>
+                        <div class="mb-5">
+                            <label for="account" class="form-label fs-5">帳號</label>
+                            <input type="text" class="form-control bg-white" id="account"
+                                placeholder="asd456@gmail.com">
+                        </div>
+                        <div>
+                            <label for="password" class="form-label fs-5">密碼</label>
+                            <input type="password" class="form-control bg-white" id="password" placeholder="0987654321">
+                        </div>
+                    </div>
+                    <a href="member.html" class="card-link btn btn-L py-3 mb-5 mx-auto w-50">登入</a>
+                    <div class="d-flex justify-content-center">
+                        <a href="forgetPassword.html" class="card-link me-7 link-primary">忘記密碼?</a>
+                        <a href="signup.html" class="card-link link-primary">註冊會員</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="../assets/images/Illustration/Top-Curve.png" alt="banner" class="promotion-curve">
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

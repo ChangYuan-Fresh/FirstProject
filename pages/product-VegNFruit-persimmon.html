@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>埔心鄉甜柿</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="header.js"></script>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container product">
+            <main class="position-relative mb-lg-11 mb-0 mt-lg-7">
+
+                <div class="row gx-lg-5">
+                    <!-- mobile展示圖片 -->
+                    <div class="d-lg-none mobile-box">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../assets/images/Persimmon by Any Lane 1.png"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://plus.unsplash.com/premium_photo-1670963024606-855efef71857?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1603886438830-007106eb5b39?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="https://images.unsplash.com/photo-1672806467026-83bde6d991a5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- pc展示圖片 -->
+                    <div class="col-lg-5 d-none d-lg-block pc-box">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/Persimmon by Any Lane 1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1670963024606-855efef71857?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1603886438830-007106eb5b39?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1672806467026-83bde6d991a5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper pt-4 pb-0">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../assets/images/Persimmon by Any Lane 1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://plus.unsplash.com/premium_photo-1670963024606-855efef71857?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1603886438830-007106eb5b39?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1672806467026-83bde6d991a5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex flex-column justify-content-between px-lg-5">
+                        <div class="mt-5 mt-lg-0">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-2">
+                                    <li class="breadcrumb-item fs-7 fs-lg-6 fw-normal"><a href="#">蔬菜水果</a></li>
+                                    <li class="breadcrumb-item fs-7 fs-lg-6 fw-normal"><a href="#">水果</a></li>
+                                    <li class="breadcrumb-item active fs-7 fs-lg-6 fw-normal" aria-current="page">
+                                        埔心鄉甜柿</li>
+                                </ol>
+                            </nav>
+                            <h1 class="fs-4 fs-lg-2 mb-1">埔心鄉甜柿</h1>
+                            <p class="mb-3 text-gray fw-normal fs-6 fs-lg-5">精心栽培，天然健康</p>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="price1">
+                                    <div class="d-flex align-items-end">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$569</h2>
+                                        <p
+                                            class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">
+                                            NT$739</p>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="price2">
+                                    <div class="d-flex align-items-end">
+                                        <h2 class="text-accent fs-5 fs-lg-4 en-font me-2">NT$639</h2>
+                                        <p
+                                            class="text-decoration-line-through text-gray fs-7 fs-lg-6 fw-normal en-font">
+                                            NT$739</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-primary fs-7 mb-2">規格</p>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray active me-2 fs-6 fs-lg-5 btn-outline-gray-big"
+                                        id="price1" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">小果5斤裝</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5 btn-outline-gray-big" id="price2"
+                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">大果5斤裝</button>
+                                </li>
+                            </ul>
+                            <div class="mb-5">
+                                <div class="d-flex justify-content-between w-50">
+                                    <p class="text-primary fs-7 mb-2">數量</p>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active d-none d-lg-block" id="pills-home"
+                                            role="tabpanel" aria-labelledby="price1">
+                                            <p class="text-gray">剩餘 10 箱</p>
+                                        </div>
+                                        <div class="tab-pane fade d-none d-lg-block" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="price2">剩餘 3 箱</div>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-s me-2"><span
+                                            class="material-symbols-outlined align-middle">remove</span></button>
+                                    <button class="btn btn-outline-gray fs-6 fs-lg-5">1</button>
+                                    <button class="btn btn-s ms-2"><span
+                                            class="material-symbols-outlined align-middle">add</span></button>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex">
+                                <a href="#" class="btn btn-L w-100 mb-3 mb-lg-0 fs-5 py-3 me-lg-5 me-0">加入購物車</a>
+                                <a href="#" class="btn btn-L w-100 active fs-5 py-3">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- mobile文案 -->
+            <article class="d-lg-none">
+                <ul class="list-unstyled">
+                    <li class="my-5">
+                        <h2>商品介紹</h2>
+                        <p class="mb-2">
+                            香甜多汁的自然美味
+                        </p>
+                        <p>在台灣中部的埔心鄉，甜柿被譽為秋天的甜蜜象徵。這裡氣候溫暖、土壤肥沃，非常適合栽種甜柿，培育出的甜柿果肉柔軟、汁多味美，深受消費者喜愛。每年秋天，當柿子成熟時，埔心鄉的果園便成為豐收的象徵，滿樹的甜柿像掛滿燦爛的陽光，令人垂涎欲滴。
+                        </p>
+                        <p data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="text-center text-primary">看全部<span
+                                class="material-symbols-outlined align-middle">keyboard_arrow_down</span></p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1667120247725-b22abc963b0d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="persimmon" class="card-img img-fluid">
+                                <p class="card-text mb-2">
+                                    埔心鄉的甜柿以其獨特的香氣和甜美的果肉而聞名。成熟的甜柿色澤橙紅，果實飽滿，咬下一口，鮮甜的果汁瞬間在口中爆發，讓人彷彿置身於大自然的懷抱。甜柿中富含豐富的維生素A、C及多種礦物質，不僅美味可口，更是天然的健康水果。
+                                </p>
+                                <p class="card-text mb-3">
+                                    埔心鄉的果農世世代代傳承著栽種甜柿的技術，秉持著對土地的敬重與自然的關愛，採用無農藥、無化肥的種植方式，保證每一顆甜柿都是純天然的。這些甜柿經過精心照料和自然日照，保持了其原始的自然風味和營養價值，是您餐桌上不可或缺的健康水果。
+                                </p>
+                                <img src="https://plus.unsplash.com/premium_photo-1664372599649-47d2fe21981b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="persimmon" class="card-img img-fluid">
+                                <p class="card-text mb-2">
+                                    甜柿不僅適合生吃，還可以用來製作各式甜點、沙拉和果汁。無論是搭配奶酪或優格，還是製作甜柿派、果醬，它的自然甜味都能為料理增添獨特風味，讓您的秋日餐桌充滿豐收的氣息。
+                                </p>
+                                <p class="card-text mb-3">
+                                    每一顆甜柿都蘊含著埔心鄉果農的心血與大自然的精華。無論是作為日常零食，還是節日贈禮，埔心鄉的甜柿都會為您帶來秋天的甘甜和滿足。
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1566799740104-b72e4d291db6?q=80&w=1822&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="persimmon" class="card-img img-fluid">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="my-5">
+                        <h2>規格說明</h2>
+                        <p>小果5斤裝，每箱約20-24 顆</p>
+                        <p>大果5斤裝，每箱約14-16 顆</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>保存方法</h2>
+                        <p>收到後開箱常溫保存,請盡快於賞味期限內食用完畢</p>
+                    </li>
+                    <li class="my-5">
+                        <h2>滿額免運原則</h2>
+                        <ol>
+                            <li>
+                                全館商品滿 $1000 (含及以上)即享免運服務
+                            </li>
+                            <li>
+                                訂單含冷凍商品時，僅提供宅配服務
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+            <!-- pc文案 -->
+            <article class="d-none d-lg-block">
+                <nav id="navbar-example2">
+                    <ul class="list-unstyled d-flex justify-content-between w-100 border-bottom mb-8">
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading1" class="py-4 fs-4 text-black active">商品介紹</a>
+                        </li>
+                        <li class="btn text-center w-100 me-5 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading2" class="py-4 fs-4 text-black">規格說明</a>
+                        </li>
+                        <li class="btn text-center w-100 p-0 border-bottom-transparent border-4">
+                            <a href="#scrollspyHeading3" class="py-4 fs-4 text-black">評論</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+                    class="scrollspy-example pt-8" tabindex="0">
+                    <div id="scrollspyHeading1">
+                        <p class="mb-3">
+                            香甜多汁的自然美味
+                        </p>
+                        <p>在台灣中部的埔心鄉，甜柿被譽為秋天的甜蜜象徵。這裡氣候溫暖、土壤肥沃，非常適合栽種甜柿，培育出的甜柿果肉柔軟、汁多味美，深受消費者喜愛。每年秋天，當柿子成熟時，埔心鄉的果園便成為豐收的象徵，滿樹的甜柿像掛滿燦爛的陽光，令人垂涎欲滴。
+                        </p>
+                        <img src="https://images.unsplash.com/photo-1667120247725-b22abc963b0d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="persimmon" class="img-fluid">
+                        <p class="mb-3">
+                            埔心鄉的甜柿以其獨特的香氣和甜美的果肉而聞名。成熟的甜柿色澤橙紅，果實飽滿，咬下一口，鮮甜的果汁瞬間在口中爆發，讓人彷彿置身於大自然的懷抱。甜柿中富含豐富的維生素A、C及多種礦物質，不僅美味可口，更是天然的健康水果。
+                        </p>
+                        <p class="card-text mb-3">
+                            埔心鄉的果農世世代代傳承著栽種甜柿的技術，秉持著對土地的敬重與自然的關愛，採用無農藥、無化肥的種植方式，保證每一顆甜柿都是純天然的。這些甜柿經過精心照料和自然日照，保持了其原始的自然風味和營養價值，是您餐桌上不可或缺的健康水果。
+                        </p>
+                        <img src="https://plus.unsplash.com/premium_photo-1664372599649-47d2fe21981b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="persimmon" class="img-fluid">
+                        <p class="mb-3">
+                            甜柿不僅適合生吃，還可以用來製作各式甜點、沙拉和果汁。無論是搭配奶酪或優格，還是製作甜柿派、果醬，它的自然甜味都能為料理增添獨特風味，讓您的秋日餐桌充滿豐收的氣息。
+                        </p>
+                        <p>每一顆甜柿都蘊含著埔心鄉果農的心血與大自然的精華。無論是作為日常零食，還是節日贈禮，埔心鄉的甜柿都會為您帶來秋天的甘甜和滿足。
+                        </p>
+                        <img src="https://images.unsplash.com/photo-1566799740104-b72e4d291db6?q=80&w=1822&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="persimmon" class="img-fluid">
+                    </div>
+                    <ul id="scrollspyHeading2" class="list-unstyled">
+                        <li class="mb-8">
+                            <h2>規格說明</h2>
+                            <p>小果5斤裝，每箱約20-24 顆</p>
+                            <p>大果5斤裝，每箱約14-16 顆</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>保存方法</h2>
+                            <p>收到後開箱常溫保存,請盡快於賞味期限內食用完畢</p>
+                        </li>
+                        <li class="mb-8">
+                            <h2>滿額免運原則</h2>
+                            <ol>
+                                <li>
+                                    全館商品滿 $1000 (含及以上)即享免運服務
+                                </li>
+                                <li>
+                                    訂單含冷凍商品時，僅提供宅配服務
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section class="section1 mb-5 pt-8 border-top" id="scrollspyHeading3">
+                <div class="d-flex justify-content-between mb-3">
+                    <h2>評論</h2>
+                    <a href="#" class="link-primary d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">看所有評論 (14)</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content bg-secondary-200">
+                                <div class="modal-header border-0 px-0 pt-6 pb-3">
+                                    <h5 class="modal-title text-black" id="exampleModalLabel">所有評論 (14)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">陳小美</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>埔心鄉的甜柿真的名不虛傳！果肉非常細膩，甜度適中，不會過於膩口。每一口咬下去都充滿了果汁，非常清爽。這已經成為我們家秋天必備的水果之一。</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">李*英</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-gray fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>埔心鄉的甜柿外皮光滑，果肉非常軟嫩，香氣濃郁，讓人一打開包裝就能聞到撲鼻而來的清甜果香。果實入口即化，味道鮮美。特別推薦給喜歡吃新鮮水果的朋友們！
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">二林千千</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-lg-6">
+                                            品質優，水份充足，甜度夠
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">台中黃*儀</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>喜歡，配送速度有加快，讚喔！
+                                        </p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">柯*佩</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>小箱很好 符合新鮮吃完</p>
+                                    </div>
+                                    <div class="bg-secondary-200 py-5 border-bottom">
+                                        <div class="mb-4 d-flex flex-column">
+                                            <h3 class="fs-5 text-black mb-3">S****h</h3>
+                                            <div>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span
+                                                    class="material-symbols-outlined text-accent fs-4 me-1">star</span>
+                                                <span class="material-symbols-outlined text-accent fs-4">star</span>
+                                            </div>
+                                        </div>
+                                        <p>包裝完整又乾淨，水果新鮮又好吃，超乎預期的甜，我已經立刻重新訂購送給家人吃。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">陳小美</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 text-truncate d-lg-none">
+                                埔心鄉的甜柿真的名不虛傳！果肉非常細膩，甜度適中，不會過於膩口。每一口咬下去都充滿了果汁，非常清爽。這已經成為我們家秋天必備的水果之一。</p>
+                            <p class="card-text fs-6 d-none d-lg-block">
+                                埔心鄉的甜柿真的名不虛傳！果肉非常細膩，甜度適中，不會過於膩口。每一口咬下去都充滿了果汁，非常清爽。這已經成為我們家秋天必備的水果之一。</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model7">看全部</a>
+                            <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">二林千千</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>埔心鄉的甜柿真的名不虛傳！果肉非常細膩，甜度適中，不會過於膩口。每一口咬下去都充滿了果汁，非常清爽。這已經成為我們家秋天必備的水果之一。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">李*英</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-gray fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 text-truncate d-lg-none">
+                                埔心鄉的甜柿外皮光滑，果肉非常軟嫩，香氣濃郁，讓人一打開包裝就能聞到撲鼻而來的清甜果香。果實入口即化，味道鮮美。特別推薦給喜歡吃新鮮水果的朋友們！</p>
+                            <p class="card-text fs-6 d-none d-lg-block">
+                                埔心鄉的甜柿外皮光滑，果肉非常軟嫩，香氣濃郁，讓人一打開包裝就能聞到撲鼻而來的清甜果香。果實入口即化，味道鮮美。特別推薦給喜歡吃新鮮水果的朋友們！</p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model6">看全部</a>
+                            <div class="modal fade" id="model6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">李*英</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>埔心鄉的甜柿外皮光滑，果肉非常軟嫩，香氣濃郁，讓人一打開包裝就能聞到撲鼻而來的清甜果香。果實入口即化，味道鮮美。特別推薦給喜歡吃新鮮水果的朋友們！
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">二林千千</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                品質優，水份充足，甜度夠</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">台中黃*儀</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                喜歡，配送速度有加快，讚喔！</p>
+                            
+                        </div>
+                    </div>
+                    <p data-bs-toggle="collapse" href="#collapseCommet" role="button" aria-expanded="false"
+                        aria-controls="collapseExample" class="text-primary text-center d-lg-none">看所有評論 (14)</p>
+                    <div class="collapse d-lg-none" id="collapseCommet">
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5 mb-2">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">柯*佩</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-7 fs-lg-6">
+                                小箱很好 符合新鮮吃完</p>
+                        </div>
+                        <div class="card border-0 bg-secondary-200 p-4 p-lg-5">
+                            <div class="card-title mb-lg-4 d-flex flex-lg-column justify-content-between">
+                                <h3 class="fs-6 fs-lg-5 text-black mb-lg-3">S****h</h3>
+                                <div>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4 me-1">star</span>
+                                    <span class="material-symbols-outlined text-accent fs-6 fs-lg-4">star</span>
+                                </div>
+                            </div>
+                            <p class="card-text fs-6 fs-lg-6 fs-7 text-truncate d-lg-none">
+                                包裝完整又乾淨，水果新鮮又好吃，超乎預期的甜，我已經立刻重新訂購送給家人吃。
+                            </p>
+                            <a href="#" class="mt-auto fs-7 link-primary" data-bs-toggle="modal"
+                                data-bs-target="#model5">看全部</a>
+                            <div class="modal fade" id="model5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content py-5">
+                                        <h3 class="fs-5 text-black mb-3">李*英</h3>
+                                        <div class="mb-4">
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5 me-1">star</span>
+                                            <span class="material-symbols-outlined text-accent fs-5">star</span>
+                                        </div>
+                                        <p>包裝完整又乾淨，水果新鮮又好吃，超乎預期的甜，我已經立刻重新訂購送給家人吃。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <img src="../assets/images/Illustration/Top-Curve.png" alt="banner" class="promotion-curve">
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                var swiper2 = new Swiper(".mySwiper2", {
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                        swiper: swiper,
+                    },
+                });
+                var swiper3 = new Swiper(".mySwiper3", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+
+</body>
+
+</html>

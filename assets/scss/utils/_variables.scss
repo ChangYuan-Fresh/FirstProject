@@ -299,7 +299,8 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #788F49; //$blue !default; custom
-$secondary:     #F1EAD4; //$gray-600 !default; custom
+$secondary:     #F1EAD4; //$gray-600 !default; custom //secondary-100
+$secondary-200: #F8F5E9; //custom 
 $tertiary:      #FFFCF3; //custom
 $accent:        #FF8965; //custom
 $black:         #192115; //custom
@@ -325,6 +326,7 @@ $theme-colors: (
   "dark":       $dark,
 
   //custom;
+  "secondary-200":  $secondary-200,
   "tertiary":   $tertiary,
   "accent":     $accent,
   "black":      $black,
@@ -1284,8 +1286,8 @@ $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
-$dropdown-link-hover-color:         $dropdown-link-color !default;
-$dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-color:         $white !default;//$dropdown-link-color !default; //custom
+$dropdown-link-hover-bg:            $primary !default; //var(--#{$prefix}tertiary-bg) !default; //custom
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
@@ -1322,8 +1324,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              .5rem !default; //.375rem !default; //custom
+$pagination-padding-x:              1rem !default;  //.75rem !default; //custom
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1331,25 +1333,25 @@ $pagination-padding-x-lg:           1.5rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     var(--#{$prefix}body-bg) !default;
-$pagination-border-radius:          var(--#{$prefix}border-radius) !default;
+$pagination-color:                  var(--#{$prefix}black) !default; //var(--#{$prefix}link-color) !default; //custom
+$pagination-bg:                     var(--#{$prefix}secondary) !default; //var(--#{$prefix}body-bg) !default; //custom
+$pagination-border-radius:          .75rem !default; //var(--#{$prefix}border-radius) !default; //custom
 $pagination-border-width:           var(--#{$prefix}border-width) !default;
 $pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color:           var(--#{$prefix}border-color) !default;
 
-$pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-focus-bg:               var(--#{$prefix}secondary-bg) !default;
-$pagination-focus-box-shadow:       $focus-ring-box-shadow !default;
+$pagination-focus-color:            var(--#{$prefix}white) !default;//var(--#{$prefix}link-hover-color) !default; //custom
+$pagination-focus-bg:               var(--#{$prefix}accent) !default; //var(--#{$prefix}secondary-bg) !default; //custom
+$pagination-focus-box-shadow:       0 !default;//$focus-ring-box-shadow !default; //custom
 $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
 $pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
-$pagination-active-border-color:    $component-active-bg !default;
+$pagination-active-color:           var(--#{$prefix}white) !default;//$component-active-color !default;
+$pagination-active-bg:              var(--#{$prefix}accent) !default; //$component-active-bg !default;
+$pagination-active-border-color:    0 !default;//$component-active-bg !default;
 
 $pagination-disabled-color:         var(--#{$prefix}secondary-color) !default;
 $pagination-disabled-bg:            var(--#{$prefix}secondary-bg) !default;
@@ -1410,20 +1412,20 @@ $accordion-body-padding-x:                $accordion-padding-x !default;
 
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
-$accordion-button-color:                  var(--#{$prefix}body-color) !default;
-$accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
-$accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
+$accordion-button-color:                  $white !default; //var(--#{$prefix}body-color) !default; //custom
+$accordion-button-bg:                     $primary !default; //var(--#{$prefix}accordion-bg) !default; //custom
+$accordion-transition:                    $btn-transition, border-radius .15s ease !default; 
+$accordion-button-active-bg:              $accent !default; //var(--#{$prefix}primary-bg-subtle) !default; //custom
+$accordion-button-active-color:           $white !default; //var(--#{$prefix}primary-text-emphasis) !default; //custom
 
 // fusv-disable
 $accordion-button-focus-border-color:     $input-focus-border-color !default; // Deprecated in v5.3.3
 // fusv-enable
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-box-shadow:       $white !default; //$btn-focus-box-shadow !default; //custom
 
 $accordion-icon-width:                    1.25rem !default;
-$accordion-icon-color:                    $body-color !default;
-$accordion-icon-active-color:             $primary-text-emphasis !default;
+$accordion-icon-color:                    $white !default; //$body-color !default; //custom
+$accordion-icon-active-color:             $white !default; //$primary-text-emphasis !default; //custom
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 
