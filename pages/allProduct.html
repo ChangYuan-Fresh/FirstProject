@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全部商品 | 彰源鮮味</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="header.js"></script>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <section class="mt-6 position-relative">
+            <div class="allProduct-banner-mx">
+                <img src="../assets/images/Farm Pictures max-O_TVsaeZNlE 1.png" alt="" class="d-block w-100 allProduct-banner-img">
+                <div class="position-absolute top-50 start-50 translate-middle allProduct-banner-375size">
+                    <h4 class="d-inline-block bg-white py-lg-2 px-lg-4 p-2 mb-lg-4 mb-2 fs-lg-4 fs-6">
+                        全部商品
+                        <span class="ms-lg-2 fs-lg-5 fs-6">
+                            Store
+                        </span>
+                    </h4>
+                    <br>
+                    <h4 class="d-block bg-primary text-white py-lg-3 px-lg-4 p-2 allProduct-banner-fs">
+                        產地到餐桌<br class="d-lg-none d-block"><span class="pt-lg-2 text-nowrap">全館滿千免運！</span>
+                    </h4>
+                </div>
+            <img src="../assets/images/Illustration/Top-Curve(2).png" alt="" class="d-block position-absolute bottom-0 start-0 w-100 allProduct-banner-mask">
+        </section>
+        <section class="bg-Tertiary container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-2 allProduct-side">
+                    <section class="accordion" id="accordionSidebar">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed px-0 fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    熱門商品
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSidebar">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">熱門商品</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed px-0 fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    蔬菜水果
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">水果</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">蔬菜</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed px-0 fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    生鮮肉品
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebar">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">牛肉</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">豬肉</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed px-0 fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    水產海鮮
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSidebar">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">魚類</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">蝦類</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">貝類</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">其他</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed px-0 fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    蛋與乳品
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionSidebar">
+                                <div class="accordion-body p-0">
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">蛋</a><br>
+                                    <a href="#" class="text-black fw-normal ps-4 py-2">乳品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="bg-secondary w-100 h-auto my-7 p-5 pb-0 d-lg-block d-none allProduct-side-history">
+                            <h6 class="fs-5 mb-4">你曾瀏覽過：</h6>
+                        <div>
+                            <img src="/assets/images/Shrimp by Anthony Camp 1.png" alt="">
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">紐西蘭白蝦</h5>
+                        </div>
+                        <div>
+                            <img src="/assets/images/Persimmon by Any Lane 1.png" alt="">
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">埔心鄉甜柿</h5>
+                        </div>
+                        <div>
+                            <img src="/assets/images/Grapefruit by Engin Akyurt 1.png" alt="">
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">芬園鄉葡萄柚</h5>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Main Content -->
+                <section class="col-lg-9">
+                    <!-- Title and Sort Options -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2>水產海鮮</h2>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                排序方式：熱門
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">熱門</a></li>
+                                <li><a class="dropdown-item" href="#">價格高至低</a></li>
+                                <li><a class="dropdown-item" href="#">價格低至高</a></li>
+                                <li><a class="dropdown-item" href="#">銷售量高至低</a></li>
+                                <li><a class="dropdown-item" href="#">銷售量低至高</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product Grid -->
+                    <div class="row d-flex justify-content-between allProduct-items">
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Oyster HD Image (1) 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">伸港鄉生猛鮮蚵</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat product cards for each item -->
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Kindelmedia 8352389 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">福興鄉文蛤</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Fish from Pexels 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">秀水鄉虱目魚</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Oyster HD Image (2) 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">鹿港鎮牡蠣</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat product cards for each item -->
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Grouper Pictures Karl Muscat 1 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">大城鄉龍膽石斑魚</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Seafood from Pexels 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">線西鄉白蝦</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Clam Pictures Henry Perks 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">芳苑鄉台灣蜆</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat product cards for each item -->
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Eel Pictures by Natalia Gusakova 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">大城鄉海鰻</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <img src="../assets/images/Mali Fish 1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">白鯧</h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more cards here as needed -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">‹</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">›</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+ 
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
