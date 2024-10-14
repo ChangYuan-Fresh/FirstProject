@@ -1,0 +1,76 @@
+.order {
+    .btn:disabled {
+        opacity: 1;
+    }
+
+    .card {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid $primary;
+        border-radius: 0px;
+
+        @include media-breakpoint-up(lg) {
+            border-top: 1px solid $primary;
+            border-right: 1px solid $primary;
+            border-left: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            @include media-breakpoint-up(lg) {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .btn-s {
+            border-radius: 4px;
+            padding: 4px 6px;
+
+            @include media-breakpoint-up(lg) {
+                border-radius: 8px;
+                padding: 8px;
+            }
+        }
+
+        .btn-num {
+            padding: 4px 4px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 8px 16px;
+            }
+        }
+
+        &-body {
+            padding: 0px 12px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 16px 16px;
+            }
+        }
+    }
+    .card{
+        // max-width: 900px;
+        margin: 0 auto;
+        input{
+            padding: 10px 24px;
+            border:1px solid $primary;
+        }
+        .form-check-input{
+            padding: 6px 6px;
+        }
+    }
+    .btn-close{
+        background: $primary;
+        color: $secondary;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        border-radius: 100px;
+    }
+}
