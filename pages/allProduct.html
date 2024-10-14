@@ -16,6 +16,7 @@
 <body>
     <%- include('./layout/header'); -%>
     <main>
+        <!-- Banner -->
         <section class="mt-6 position-relative">
             <div class="allProduct-banner-mx">
                 <img src="../assets/images/Farm Pictures max-O_TVsaeZNlE 1.png" alt="" class="d-block w-100 allProduct-banner-img">
@@ -33,8 +34,10 @@
                 </div>
             <img src="../assets/images/Illustration/Top-Curve(2).png" alt="" class="d-block position-absolute bottom-0 start-0 w-100 allProduct-banner-mask">
         </section>
+        <!-- Banner下方之主要內容 -->
         <section class="bg-Tertiary container">
             <div class="row d-flex justify-content-between">
+                <!-- 左側手風琴選單 -->
                 <div class="col-lg-2 allProduct-side">
                     <section class="accordion" id="accordionSidebar">
                         <div class="accordion-item">
@@ -104,26 +107,32 @@
                             </div>
                         </div>
                     </section>
+                    <!-- 左側瀏覽紀錄 -->
                     <section class="bg-secondary w-100 h-auto my-7 p-5 pb-0 d-lg-block d-none allProduct-side-history">
                             <h6 class="fs-5 mb-4">你曾瀏覽過：</h6>
                         <div>
-                            <img src="/assets/images/Shrimp by Anthony Camp 1.png" alt="">
-                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">紐西蘭白蝦</h5>
+                            <a href="#">
+                                <img src="/assets/images/Shrimp by Anthony Camp 1.png" alt="">
+                            </a>
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6"><a href="#">紐西蘭白蝦</a></h5>
                         </div>
                         <div>
-                            <img src="/assets/images/Persimmon by Any Lane 1.png" alt="">
-                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">埔心鄉甜柿</h5>
+                            <a href="#">
+                                <img src="/assets/images/Persimmon by Any Lane 1.png" alt="">
+                            </a>
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6"><a href="#">埔心鄉甜柿</a></h5>
                         </div>
                         <div>
+                        <a href="#">
                             <img src="/assets/images/Grapefruit by Engin Akyurt 1.png" alt="">
-                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6">芬園鄉葡萄柚</h5>
+                        </a>
+                            <h5 class="pt-2 pb-5 fs-lg-5 fs-6"><a href="#">芬園鄉葡萄柚</a></h5>
                         </div>
                     </section>
                 </div>
                 
-                <!-- Main Content -->
+                <!-- 商品列表 -->
                 <section class="col-lg-9">
-                    <!-- Title and Sort Options -->
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h2>水產海鮮</h2>
                         <div class="dropdown">
@@ -139,98 +148,107 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Product Grid -->
                     <div class="row d-flex justify-content-between allProduct-items">
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Oyster HD Image (1) 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Oyster HD Image (1) 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">伸港鄉生猛鮮蚵</h5>
-                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat product cards for each item -->
-                        <div class="col-md-4">
-                            <div class="card mb-8">
-                                <img src="../assets/images/Kindelmedia 8352389 1.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">福興鄉文蛤</h5>
+                                    <h5 class="card-title"><a href="#">伸港鄉生猛鮮蚵</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Fish from Pexels 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Kindelmedia 8352389 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">秀水鄉虱目魚</h5>
+                                    <h5 class="card-title"><a href="#">福興鄉文蛤</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Oyster HD Image (2) 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Fish from Pexels 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">鹿港鎮牡蠣</h5>
-                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat product cards for each item -->
-                        <div class="col-md-4">
-                            <div class="card mb-8">
-                                <img src="../assets/images/Grouper Pictures Karl Muscat 1 1.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">大城鄉龍膽石斑魚</h5>
+                                    <h5 class="card-title"><a href="#">秀水鄉虱目魚</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Seafood from Pexels 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Oyster HD Image (2) 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">線西鄉白蝦</h5>
+                                    <h5 class="card-title"><a href="#">鹿港鎮牡蠣</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Clam Pictures Henry Perks 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Grouper Pictures Karl Muscat 1 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">芳苑鄉台灣蜆</h5>
-                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Repeat product cards for each item -->
-                        <div class="col-md-4">
-                            <div class="card mb-8">
-                                <img src="../assets/images/Eel Pictures by Natalia Gusakova 1.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">大城鄉海鰻</h5>
+                                    <h5 class="card-title"><a href="#">大城鄉龍膽石斑魚</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-8">
-                                <img src="../assets/images/Mali Fish 1.png" class="card-img-top" alt="">
+                                <a href="#">
+                                    <img src="../assets/images/Seafood from Pexels 1.png" class="card-img-top" alt="">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title">白鯧</h5>
+                                    <h5 class="card-title"><a href="#">線西鄉白蝦</a></h5>
                                     <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Add more cards here as needed -->
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <a href="#">
+                                    <img src="../assets/images/Clam Pictures Henry Perks 1.png" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">芳苑鄉台灣蜆</a></h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <a href="#">
+                                    <img src="../assets/images/Eel Pictures by Natalia Gusakova 1.png" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">大城鄉海鰻</a></h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-8">
+                                <a href="#">
+                                    <img src="../assets/images/Mali Fish 1.png" class="card-img-top" alt="">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">白鯧</a></h5>
+                                    <p class="text-accent">NT$200 <span class="text-muted">NT$399</span></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Pagination -->
                     <nav aria-label="Page navigation">
                         <ul class="pagination justify-content-center">
                             <li class="page-item"><a class="page-link" href="#">‹</a></li>
