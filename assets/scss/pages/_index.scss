@@ -78,6 +78,27 @@ main{
    letter-spacing: 0;
 }
 
+.product-index-img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    @media(min-width: 576px){
+        width: 516px;
+        height: 387px;
+    }
+    @media(min-width: 767px){
+        width: 336px;
+        height: 252px;
+    }
+    @media(min-width: 992px){
+        width: 456px;
+        height: 342px;
+    }
+    @media(min-width: 1200px){
+        width: 305px;
+        height: 229px;
+    }
+}
 .product-btn{
     color: #FFFFFF;
     &:hover{
