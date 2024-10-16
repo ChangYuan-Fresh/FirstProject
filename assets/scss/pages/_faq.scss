@@ -1,16 +1,3 @@
-main{ 
-    margin: auto;
-}
-
-//banner
-
-.banner-img{  
-    height: 75vh; //讓手機版維持高度
-    object-fit: cover; //讓背景圖底下圓角被裝飾確實遮擋
-    @media(min-width: 992px) {
-        border-radius: 80px;
-    }
-}
 
 //faq
 
