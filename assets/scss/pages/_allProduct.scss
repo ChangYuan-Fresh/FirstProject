@@ -57,6 +57,17 @@
     }
 }
 
+.allProduct-container-pt {
+    padding-top: 120px;
+}
+
+@media (max-width: 992px) {
+
+    .allProduct-container-pt {
+        padding-top: 0;
+    }
+}
+
 .allProduct-side {
 
     .accordion {
@@ -104,4 +115,9 @@
     &-card {
         border: none;
     }
+}
+
+.allProduct-bottom-mask {
+    min-height: 228px;
+    object-fit: cover;
 }
