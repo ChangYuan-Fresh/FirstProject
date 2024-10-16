@@ -91,20 +91,17 @@
 
 .allProduct-items {
 
-    img {
+    &-sort {
+        padding: 2.5px 0;
+    }
+
+    &-img {
         aspect-ratio: 306/280;
         object-fit: cover;
         border-radius: 1rem;
     }
 
-    .card {
+    &-card {
         border: none;
-
-        &-body {
-            border: none;
-            padding-bottom: 0;
-            padding-top: 12px;
-        }
     }
-
 }
