@@ -1,17 +1,17 @@
 .banner {
-  max-width: 100%; // 改為100%以填滿整個寬度
+  max-width: 100%;
   margin: 0;
   padding: 0;
-  border-radius: 0; // 移除圓角
-  position: relative; // 為絕對定位的子元素提供參考
-  overflow: hidden; // 確保波浪不會超出容器
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-content {
   position: relative;
-  height: 80vh; // 增加高度
+  height: 80vh;
   overflow: hidden;
-  border-radius: 0; // 移除底部圓角
+  border-radius: 0;
   margin-bottom: 0;
 
   img {
@@ -82,25 +82,41 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  max-width: 1200px; // 限制最大寬度
-  margin: 0 auto 3rem; // 居中並保持底部間距
-  padding: 0 2rem; // 添加左右內邊距
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
 
   .content-block:first-of-type {
-    margin-top: -100px; // 調整這個值，使內容與波浪重疊
+    margin-top: -100px;
     position: relative;
-    z-index: 3; // 確保內容在波浪之上
+    z-index: 3;
   }
 
   img {
-    width: 746px;
-    height: 500px;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 40px;
+    flex-shrink: 0;
   }
-  .img-right {
+
+  .reverse {
+    flex-direction: row-reverse;
+
+    img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 40px;
+      flex-shrink: 0;
+    }
+  }
+
+  .img-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+    img {
+      width: 100%;
+    }
   }
 
   .text-content {
@@ -154,40 +170,61 @@
 
 // 響應式設計
 @media (max-width: 768px) {
-  .text-content {
-    height: 40vh;
-
-    .text-area {
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 90%;
-
-      h1,
-      h2 {
-        font-size: 1.2rem;
-        padding: 0.3rem 0.6rem;
-      }
-    }
+  .text-area {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
   }
 
   .content-block {
     flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 0;
 
-    img,
-    .text-content {
+    &:not(:first-child) {
+      margin-top: 12rem;
+    }
+
+    & + .content-block {
+      margin-top: -16rem;
+    }
+
+    img {
       width: 100%;
+      aspect-ratio: 3 / 2;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      order: -1;
     }
 
     .text-content {
+      width: 100%;
+      order: 1;
+      margin-bottom: 2rem;
+
       .number {
-        top: -40px;
         font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
       }
 
       p {
-        margin-top: 2rem;
-        padding: 1.5rem;
+        margin-top: 0.5rem;
+        padding: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    &.reverse {
+      flex-direction: column;
+
+      img {
+        order: -1;
+      }
+
+      .text-content {
+        order: 1;
       }
     }
   }

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單建立</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="header.js"></script>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container order mt-7">
+            <h1 class="card-title fs-2 text-center text-primary mb-9">訂單建立</h1>
+            <!-- 時間軸 -->
+            <div class="position-relative m-8 m-md-9">
+                <div class="progress" style="height: 1px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button"
+                    class="position-absolute top-0 start-0 translate-middle btn btn-primary rounded-pill text-white px-lg-5 py-lg-3 py-2 px-3 fs-lg-5 fs-7"><span
+                        class="material-symbols-outlined p-0 me-1 fs-lg-3 fs-5 align-bottom">
+                        counter_1</span>訂單確認</button>
+                <button type="button"
+                    class="position-absolute top-0 start-50 translate-middle btn btn-primary rounded-pill px-lg-5 py-lg-3 py-2 px-3 fs-lg-5 fs-7 text-white"
+                    disabled><span
+                        class="material-symbols-outlined p-0 me-1 fs-lg-3 fs-5 align-bottom">counter_2</span>訂單建立</button>
+                <button type="button"
+                    class="position-absolute top-0 start-100 translate-middle btn btn-secondary rounded-pill text-nowrap px-lg-5 py-lg-3 py-2 px-3 fs-lg-5 fs-7 text-accent"
+                    disabled><span class="material-symbols-outlined p-0 me-1 fs-lg-3 fs-5 align-bottom">
+                        counter_3
+                    </span>購物完成</button>
+            </div>
+            <!-- 總結 -->
+            <div class="card card-border mb-3 mt-lg-5 mt-0 py-4 bg-secondary border-0 rounded-3">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-6">
+                    </div>
+                    <div class="col-lg-6 p-lg-5 p-0">
+                        <div class="d-flex flex-column mb-0">
+                            <div class="d-flex justify-content-end justify-content-lg-around">
+                                <div class="d-flex me-4 align-items-center">
+                                    <p class="text-primary fs-7 fs-lg-5">商品數量：</p>
+                                    <button class="btn btn-white fs-6 fs-lg-5 py-2 px-4">3</button>
+                                </div>
+                                <div class="d-flex me-2 me-lg-7 align-items-center">
+                                    <p class="text-primary fs-7 fs-lg-5">商品總金額：</p>
+                                    <button
+                                        class="btn btn-white fs-5 fs-lg-4 text-accent en-font text-end fw-bold py-2 px-lg-4">NT$999</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 訂購人 -->
+            <div class="card card-border my-5 card-border">
+                <div class="card-header border-secondary bg-secondary py-4">
+                    <h2 class="fs-lg-4 fs-5 me-5">訂購人</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center g-lg-5 g-0">
+                        <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <label for="name" class="col-lg-2 col-3 col-form-label fs-7 fs-lg-6">姓名：</label>
+                                <div class="col-lg-7 col-lg-8 col-9">
+                                    <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <label for="phone" class="col-lg-2 col-3 col-form-label fs-7 fs-lg-6">電話：</label>
+                                <div class="col-lg-7 col-lg-8 col-9">
+                                    <input type="tel" class="form-control" id="phone" placeholder="請輸入電話">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row align-items-center">
+                                <label for="address" class="col-lg-1 col-3 col-form-label fs-7 fs-lg-6">地址：</label>
+                                <div class="col-lg-8 col-9">
+                                    <input type="text" class="form-control" id="address" placeholder="請輸入住址">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row align-items-center">
+                                <label for="email" class="col-lg-1 col-3 col-form-label fs-7 fs-lg-6">E-mail：</label>
+                                <div class="col-lg-8 col-9">
+                                    <input type="email" class="form-control" id="email" placeholder="請輸入E-mail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-border my-5">
+                <div class="card-header border-secondary d-flex align-items-center bg-secondary py-4">
+                    <h1 class="fs-lg-4 fs-5 me-5">收件人</h1>
+                    <div class="form-check">
+                        <input class="form-check-input align-middle" type="checkbox" value="" id="sameAsOrder">
+                        <label class="form-check-label fs-lg-5 fs-6" for="sameAsOrder">同訂購人
+                        </label>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center g-lg-5 g-0">
+                        <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <label for="name" class="col-lg-2 col-3 col-form-label fs-7 fs-lg-6">姓名：</label>
+                                <div class="col-lg-7 col-lg-8 col-9">
+                                    <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center">
+                                <label for="phone" class="col-lg-2 col-3 col-form-label fs-7 fs-lg-6">電話：</label>
+                                <div class="col-lg-7 col-lg-8 col-9">
+                                    <input type="tel" class="form-control" id="phone" placeholder="請輸入電話">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row align-items-center">
+                                <label for="address" class="col-lg-1 col-3 col-form-label fs-7 fs-lg-6">地址：</label>
+                                <div class="col-lg-8 col-9">
+                                    <input type="text" class="form-control" id="address" placeholder="請輸入住址">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row align-items-center">
+                                <label for="email" class="col-lg-1 col-3 col-form-label fs-7 fs-lg-6">E-mail：</label>
+                                <div class="col-lg-8 col-9">
+                                    <input type="email" class="form-control" id="email" placeholder="請輸入E-mail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-border my-5">
+                <div class="card-header border-secondary d-flex align-items-center bg-secondary py-4">
+                    <h2 class="fs-lg-4 fs-5 me-5">付款方式</h2>
+                </div>
+                <div class="card-body">
+                    <div class="py-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pay1">
+                            <label class="form-check-label" for="pay1">信用卡刷卡</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pay2" checked>
+                            <label class="form-check-label" for="pay2">Google Pay</label>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pay3">
+                            <label class="form-check-label" for="pay3">LINE Pay</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pay4" checked>
+                            <label class="form-check-label" for="pay4">Apple Pay</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-border my-5">
+                <div class="card-header border-secondary d-flex align-items-center bg-secondary py-4">
+                    <h2 class="fs-lg-4 fs-5 me-5">寄送方式</h2>
+                </div>
+                <div class="card-body d-flex flex-column flex-lg-row justify-content-between py-5">
+                    <div>
+                        <div class="d-flex mb-3">
+                            <a class="btn btn-L fs-6 me-5" data-bs-toggle="collapse" href="#collapseExample"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">冷凍宅配</a>
+                            <a href="#" class="btn btn-L fs-6 disabled">全家取貨</a>
+                        </div>
+                        <p class="text-accent">* 因含生鮮冷凍食品，僅提供宅配服務。</p>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-border card-body border-0">
+                            <div class="d-flex me-0 me-lg-7 justify-content-end align-items-center">
+                                <p class="text-primary fs-7 fs-lg-5">運費：</p>
+                                <button
+                                    class="btn btn-white fs-5 fs-lg-4 text-accent en-font text-end fw-bold py-2 px-lg-4">NT$100</button>
+                            </div>
+                            <p class="text-end me-2 me-lg-7 px-lg-4">還差1元免運</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discountCode">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-primary px-4 py-2 py-lg-4" placeholder="請輸入折扣碼"
+                                aria-label="Recipient's username" aria-describedby="discountCode">
+                            <a href="#" class="input-group-text px-7 border-primary bg-primary text-white fs-5 px-4 py-2 py-lg-4"
+                                id="discountCode">確認</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-border my-5">
+                <div class="card-header border-secondary d-flex align-items-center bg-secondary py-4">
+                    <h2 class="fs-lg-4 fs-5 me-5">備註</h2>
+                </div>
+                <div class="card-body p-5">
+                    <textarea class="form-control border-primary" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <!-- 總額 -->
+            <div class="card card-border mb-3 mt-lg-5 mt-0 py-lg-5 py-4 bg-secondary border-0 rounded-3">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-6">
+                    </div>
+                    <div class="col-lg-6 p-lg-5 p-0">
+                        <div class="d-flex flex-column mb-0">
+                            <div class="d-flex justify-content-end justify-content-lg-around mb-4">
+                                <div class="d-flex me-4 align-items-center invisible">
+                                    <p class="text-primary fs-7 fs-lg-5">商品數量：</p>
+                                    <button class="btn btn-white fs-6 fs-lg-5 py-2 px-4">3</button>
+                                </div>
+                                <div class="d-flex me-2 me-lg-7 align-items-center">
+                                    <p class="text-primary fs-7 fs-lg-5">訂單總金額：</p>
+                                    <button
+                                        class="btn btn-white fs-5 fs-lg-4 text-accent en-font text-end fw-bold py-2 px-lg-4">NT$1099</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="order-confirmOrder.html"
+                        class="btn btn-L py-2 px-6 fs-6 ms-2 ms-lg-5 py-lg-3 px-lg-7 fs-lg-4">上一頁</a>
+                    <a href="order-orderCompleted.html"
+                        class="btn btn-L py-2 px-6 fs-6 me-2 me-lg-5 py-lg-3 px-lg-7 fs-lg-4" data-bs-target="#commitModel"
+                        data-bs-toggle="modal">下一步</a>
+                </div>
+                <div class="modal fade" id="commitModel" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                    tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content position-relative">
+                            <div class="modal-header border-0">
+                                <h2 class="modal-title mx-auto mt-7 mb-3 fs-lg-2 fs-4" id="exampleModalToggleLabel2">還差 1 元，即可免運喔!
+                                </h2>
+                                <button type="button"
+                                    class="btn-close position-absolute top-0 start-100 translate-middle p-0 fs-6"
+                                    data-bs-dismiss="modal" aria-label="Close"><span
+                                        class="material-symbols-outlined align-middle">close</span></button>
+                            </div>
+                            <div class="modal-footer border-0 justify-content-center mb-7">
+                                <a href="order-orderCompleted.html" class="btn btn-s fs-lg-5 fs-6 fw-bold py-3 px-lg-8 px-5 me-6">確認送出</a>
+                                <a class="btn btn-s fs-lg-5 fs-6 fw-bold py-3 px-lg-8 px-5" href="allProduct.html">繼續購物</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="../assets/images/Illustration/Top-Curve.png" alt="banner" class="promotion-curve">
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
