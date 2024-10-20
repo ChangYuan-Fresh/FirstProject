@@ -163,11 +163,19 @@
 
   &.top {
     top: 480px; // 確保與內容完全貼合
+
+    @media (max-width: 768px) {
+      display: none; /* 在小螢幕上隱藏 */
+    }
   }
 
   &.bottom {
     bottom: -40px; // 調整這個值，使波浪與內容重疊
     z-index: 2; // 確保波浪在內容之上
+
+    @media (max-width: 768px) {
+      display: none; /* 在小螢幕上隱藏 */
+    }
   }
 }
 
