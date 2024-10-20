@@ -154,6 +154,11 @@
   height: auto;
   z-index: 1;
 
+  object-fit: cover; //讓背景圖底下圓角被裝飾確實遮擋
+  @media (mix-width: 992px) {
+    height: 78vh; //讓手機版維持高度
+  }
+
   &.top {
     top: 480px; // 確保與內容完全貼合
   }
